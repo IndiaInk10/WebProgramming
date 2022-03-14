@@ -1,0 +1,2 @@
+SELECT * fROM STUDENT;
+SELECT * fROM STUDENT WHERE depart='영어과';
