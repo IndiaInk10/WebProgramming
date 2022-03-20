@@ -1,4 +1,6 @@
-drop table member;
+use JSPBookDB;
+
+# drop table member;
 
 CREATE TABLE IF NOT EXISTS member(
    id VARCHAR(20) NOT NULL,
