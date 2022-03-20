@@ -981,3 +981,12 @@
 127.0.0.1 - - [21/Mar/2022:01:41:38 +0900] "GET /WebMarket/ch16/editProduct.jsp?edit=update HTTP/1.1" 200 2396
 127.0.0.1 - - [21/Mar/2022:01:41:39 +0900] "GET /WebMarket/ch16/editProduct.jsp?edit=delete HTTP/1.1" 200 2408
 127.0.0.1 - - [21/Mar/2022:01:41:40 +0900] "GET /WebMarket/ch16/products.jsp HTTP/1.1" 200 2145
+127.0.0.1 - - [21/Mar/2022:02:04:08 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [21/Mar/2022:02:04:10 +0900] "GET /WebMarket/ch16/welcome.jsp HTTP/1.1" 200 1245
+0:0:0:0:0:0:0:1 - - [21/Mar/2022:02:04:12 +0900] "GET /WebMarket/ch16/addProduct.jsp HTTP/1.1" 200 3624
+0:0:0:0:0:0:0:1 - - [21/Mar/2022:02:04:12 +0900] "GET /WebMarket/resources/js/validation.js HTTP/1.1" 200 1563
+0:0:0:0:0:0:0:1 - - [21/Mar/2022:02:04:12 +0900] "GET /WebMarket/resources/css/bootstrap.min.css HTTP/1.1" 200 144883
+0:0:0:0:0:0:0:1 - - [21/Mar/2022:02:04:15 +0900] "GET /WebMarket/ch16/products.jsp HTTP/1.1" 200 2145
+0:0:0:0:0:0:0:1 - - [21/Mar/2022:02:04:15 +0900] "GET /WebMarket/resources/images/P1235.png HTTP/1.1" 200 409694
+0:0:0:0:0:0:0:1 - - [21/Mar/2022:02:04:15 +0900] "GET /WebMarket/resources/images/P1234.png HTTP/1.1" 200 419680
+0:0:0:0:0:0:0:1 - - [21/Mar/2022:02:04:15 +0900] "GET /WebMarket/resources/images/P1236.png HTTP/1.1" 200 520540
