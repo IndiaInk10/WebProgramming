@@ -28,10 +28,11 @@
 
 				if (id.equals(rId) && passwd.equals(rPasswd)) {
 					sql = "delete from member where id = ? and passwd = ?";
-					pstmt = conn.prepareStatement(sql);
-					pstmt.setString(1, id);
-					pstmt.setString(2, passwd);
-					pstmt.executeUpdate();
+					PreparedStatement LocalPstmt = conn.prepareStatement(sql);
+					LocalPstmt.setString(1, id);
+					LocalPstmt.setString(2, passwd);
+					LocalPstmt.executeUpdate();
+					if(LocalPstmt != null)  LocalPstmt.close();
 					out.println("Member 테이블을 삭제했습니다.");
 				} else
 					out.println("일치하는 비밀번호가 아닙니다");

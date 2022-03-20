@@ -5,7 +5,7 @@
 <title>Database SQL</title>
 </head>
 <body>
-<%@ include file="dbconn.jsp" %>
+<%@ include file="dbconn.jsp" %> <%-- DB 연결 jsp 실행 --%>
 <%
 	request.setCharacterEncoding("utf-8");
 
