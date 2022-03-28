@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Scripting Tag</title>
+</head>
+<body>
+	<% 
+		java.util.Date now = new java.util.Date(); 
+	%>
+	<% 
+		out.println("Today : " + now); 
+		for (int i = 0; i <= 10; i++) {
+			if (i % 2 == 1)
+				out.println("<br>" + i);
+		}
+	%>  
+	<div class="container">
+		<div class="text-center">
+			<hr>
+				<a href="welcome.jsp"><button type="button" class="btn btn-outline-primary">홈 돌아가기</button></a>
+			<hr>
+		</div>
+	</div>
+</body>
+</html>

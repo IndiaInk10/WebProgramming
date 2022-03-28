@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Scripting Tag</title>
+</head>
+<body>
+	<% 
+		java.util.Date now = new java.util.Date();
+		out.println(now); 
+	%>
+	<% 
+		out.println("Today : " + now); 
+		for (int i = 0; i <= 10; i++) {
+			if (i % 2 == 1)
+				out.println(i + "<br>");
+		}
+	%>  
+	
+</body>
+</html>
