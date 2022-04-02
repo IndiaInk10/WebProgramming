@@ -1,0 +1,55 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 02 Apr 2022 16:07:56 at https://aisw.kangwon.ac.kr/aisw/index.do +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.mov +*.mpg +*.mpeg +*.avi +*.asf +*.mp3 +*.mp2 +*.rm +*.wav +*.vob +*.qt +*.vid +*.ac3 +*.wma +*.wmv
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://aisw.kangwon.ac.kr/aisw/index.do -O1 "C:\Users\india\eclipse-workspaces\Web_Programming\JspProject\src\main\webapp\AI_Software" +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar +*.gif +*.jpg +*.jpeg +*.png +*.tif +*.bmp +*.zip +*.tar +*.tgz +*.gz +*.rar +*.z +*.exe +*.mov +*.mpg +*.mpeg +*.avi +*.asf +*.mp3 +*.mp2 +*.rm +*.wav +*.vob +*.qt +*.vid +*.ac3 +*.wma +*.wmv )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+16:08:17	Warning: 	Found for https://aisw.kangwon.ac.kr/aisw/
+16:08:17	Warning: 	File has moved from https://aisw.kangwon.ac.kr/aisw/ to /aisw/index.do
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_res/knu/_share/img/common/bg-top-w.png (from https://aisw.kangwon.ac.kr/_res/knu/_share/css/sub-guide.css)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_res/knu/_share/img/board/ico-sns04.png (from https://aisw.kangwon.ac.kr/_res/knu/_share/css/board.css?57873)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_res/knu/_share/img/board/ico-sns05.png (from https://aisw.kangwon.ac.kr/_res/knu/_share/css/board.css?57873)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_res/knu/_share/img/board/ico-sns06.png (from https://aisw.kangwon.ac.kr/_res/knu/_share/css/board.css?57873)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_res/knu/_share/img/board/btn-sel-close02.png (from https://aisw.kangwon.ac.kr/_res/knu/_share/css/board.css?57873)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/file_icon.png (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_bmp.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_doc.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_docx.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_gif.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_hwp.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_jpg.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_pdf.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_png.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_ppt.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_pptx.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_txt.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_xls.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_xlsx.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:09:57	Error: 	"Not Found" (404) at link https://aisw.kangwon.ac.kr/_custom/knu/resource/img/attach_zip.gif (from https://aisw.kangwon.ac.kr/_custom/knu/resource/css/board.common.css?50386)
+16:54:08	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1684&month=11&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=1685&month=11)
+16:54:12	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2360&month=10&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=2359&month=10)
+16:54:15	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1683&month=1&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=1684&month=1)
+16:54:15	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1683&month=3&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=1684&month=3)
+16:54:32	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1681&month=6&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=1682&month=6)
+16:54:34	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2364&month=04&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2363&month=04&mode=list)
+16:54:34	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2363&allYn=Y&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=2362&allYn=Y)
+16:54:34	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2363&month=1&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=2362&month=1)
+16:54:36	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2363&month=9&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=2362&month=9)
+16:54:36	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1679&month=04&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1680&month=04&mode=list)
+16:54:38	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1680&month=4&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1681&month=4&mode=list)
+16:54:40	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1680&month=12&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1681&month=12&mode=list)
+16:54:40	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2364&month=2&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2363&month=2&mode=list)
+16:54:42	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2364&month=10&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2363&month=10&mode=list)
+16:54:42	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2364&month=11&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=2363&month=11&mode=list)
+16:54:43	Error: 	Exit requested by shell or user
+16:54:43	Warning: 	File not added due to mirror cancel: https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=1679&month=6
+16:54:43	Warning: 	File not added due to mirror cancel: https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=1679&month=6
+16:54:43	Warning: 	File not added due to mirror cancel: https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=1679&month=6
+16:54:43	Warning: 	File not added due to mirror cancel: https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=1679&month=6
+16:54:43	Error: 	"Cancelled by User" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1679&month=11&mode=list (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1680&month=11&mode=list)
+16:54:44	Error: 	"mirror stopped by user" (-1) at link https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?mode=list&cYear=1679&month=6 (from https://aisw.kangwon.ac.kr/aisw/bachelor/calendar.do?cYear=1679&allYn=Y&mode=list)
+
+HTTrack Website Copier/3.49-2 mirror complete in 46 minutes 48 seconds : 9993 links scanned, 9953 files written (449846286 bytes overall) [451914324 bytes received at 160938 bytes/sec], 860905 bytes transferred using HTTP compression in 4 files, ratio 35%, 137.3 requests per connection
+(38 errors, 6 warnings, 0 messages)
