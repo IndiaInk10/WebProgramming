@@ -1,3 +1,3 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="./bootstrap-4.6.1-dist/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="./AI_Software/aisw.kangwon.ac.kr/_res/knu/aisw/css/header.content0b7a.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/AI_Software/aisw.kangwon.ac.kr/_res/knu/aisw/css/header.content0b7a.css" />
