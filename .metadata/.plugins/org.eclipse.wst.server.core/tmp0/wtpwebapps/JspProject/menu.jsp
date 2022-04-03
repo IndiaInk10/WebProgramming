@@ -3,7 +3,11 @@
 <nav class="navbar navbar-expand  navbar-dark bg-dark">
 	<div class="container">
 		<div class="navbar-header">
-			<a class="navbar-brand" href="./index.jsp">Home</a>
+			<img src="${pageContext.request.contextPath}/AI_Software/aisw.kangwon.ac.kr/_res/knu/_share/img/common/img-logo.png">
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;AI소프트웨어학과
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;<a class="navbar-brand" href="./index.jsp">KANGWON NATIONAL UNIVERSITY</a>
 		</div>
 		<div>
 			<ul class="navbar-nav mr-auto">
