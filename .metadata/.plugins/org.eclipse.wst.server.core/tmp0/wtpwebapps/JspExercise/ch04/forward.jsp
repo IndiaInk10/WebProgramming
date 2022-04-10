@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <html>
 <head>
-<title>Action Tag</title>
+<title>Action Tag_from</title>
 </head>
 <body>
 	<h2>forward 액션 태그</h2>
