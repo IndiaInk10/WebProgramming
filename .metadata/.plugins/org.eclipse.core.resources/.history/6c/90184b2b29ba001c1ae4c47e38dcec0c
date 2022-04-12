@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<img src="${pageContext.request.contextPath}/project/_res/knu/aisw/img/main/1.jpg"
+</body>
+</html>
