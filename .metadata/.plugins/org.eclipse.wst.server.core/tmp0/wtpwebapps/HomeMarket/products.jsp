@@ -2,7 +2,8 @@
 <%@ page import="java.sql.*"%>
 <html>
 <head>
-<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" href="./resources/css/bootstrap.min.css" /> -->
+<%@ include file="bootstrap.jsp" %>
 <title>상품 목록</title>
 </head>
 <body>

@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
 <title>Welcome</title>
 </head>
 <body>
@@ -41,7 +41,7 @@
 			<hr>
 		</div>
 	</div>
-<script src="../bootstrap-4.6.0-dist/jquery/jquery-3.5.1.js"></script>
-<script src="../bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../bootstrap-4.6.1-dist/jquery/jquery-3.5.1.js"></script>
+<script src="../bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <html>
 <head>
-<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" href="./resources/css/bootstrap.min.css" /> -->
+<%@ include file="bootstrap.jsp" %>
 <title>페이지 오류</title>
 </head>
 <body>

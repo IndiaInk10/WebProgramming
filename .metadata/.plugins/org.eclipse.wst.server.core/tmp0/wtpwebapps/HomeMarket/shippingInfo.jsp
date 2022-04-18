@@ -2,7 +2,8 @@
 
 <html>
 <head>
-<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" href="./resources/css/bootstrap.min.css" /> -->
+<%@ include file="bootstrap.jsp" %>
 <title>배송 정보</title>
 </head>
 <body>

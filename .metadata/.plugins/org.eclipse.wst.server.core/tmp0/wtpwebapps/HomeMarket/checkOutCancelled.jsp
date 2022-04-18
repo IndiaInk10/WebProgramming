@@ -1,7 +1,8 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <html>
 <head>
-<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" href="./resources/css/bootstrap.min.css" /> -->
+<%@ include file="bootstrap.jsp" %>
 <title>주문 취소</title>
 </head>
 <body>

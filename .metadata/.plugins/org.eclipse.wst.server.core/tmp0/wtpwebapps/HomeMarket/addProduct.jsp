@@ -3,7 +3,8 @@
 
 <html>
 <head>
-<link rel ="stylesheet" href ="./resources/css/bootstrap.min.css" />
+<!-- <link rel ="stylesheet" href ="./resources/css/bootstrap.min.css" /> -->
+<%@ include file="bootstrap.jsp" %>
 <script type ="text/javascript" src ="./resources/js/validation.js"></script>
 <title>상품 등록</title>
 </head>
