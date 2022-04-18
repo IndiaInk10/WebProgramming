@@ -9,18 +9,18 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="text-center display-5">
-				2장 연습문제
+				5장 연습문제
 			</h1>
 		</div>
 	</div>
 	<div class="container">
 		<div class="text-center">
 			<h3>
-				<a href="declaration.jsp">4번 원본</a>&nbsp;&nbsp; : &nbsp;&nbsp;<a href="declaration2.jsp">4번 수정</a>
+				<a href="request.jsp">4번 원본</a>&nbsp;&nbsp; : &nbsp;&nbsp;<a href="request2.jsp">4번 수정</a>
 			</h3>
 			<hr>
 			<h3>
-				<a href="scriptlet.jsp">5번 원본</a>&nbsp;&nbsp; : &nbsp;&nbsp;<a href="scriptlet2.jsp">5번 수정</a>
+				<a href="">5번 원본</a>&nbsp;&nbsp; : &nbsp;&nbsp;<a href="request2.jsp">5번 수정</a>
 			</h3>
 			<hr>
 			<h3>
