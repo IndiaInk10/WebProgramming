@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <%@ include file="./bootstrap.jsp" %>
     <%@ include file="./link.txt" %> <%-- 매번 들어감 --%>
     <title>AI소프트웨어학과</title>
 </head>

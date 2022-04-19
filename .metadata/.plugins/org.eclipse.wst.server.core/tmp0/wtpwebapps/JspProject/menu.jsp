@@ -16,11 +16,10 @@
 		</div>
 
 
-		<div>
+		<%-- <div>
 			<ul class="navbar-nav mr-auto dropdown-content">
 				<li class="nav-item">
 					<a class="nav-link" href="./products.jsp" style="color: black;" >학과소개
-						<%-- top right bottom left --%>
 						<img src="${pageContext.request.contextPath}/project/_res/knu/_share/img/board/btn-bg-sel.gif"	 
 							 style="margin: 0px 0px 5px 3px"
 						>
@@ -55,8 +54,72 @@
 					</a>
 				</li>
 			</ul>
+		</div> --%>
+		<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+			<ul class="navbar-nav dropdown-content">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						학과소개
+					</a>
+					<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+						<li><a class="dropdown-item" href="#">인사말</a></li>
+						<li><a class="dropdown-item" href="#">학과연혁</a></li>
+						<li><a class="dropdown-item" href="#">학과소개</a></li>
+						<li><a class="dropdown-item" href="#">실습실소개</a></li>
+						<li><a class="dropdown-item" href="#">동아리소개</a></li>
+						<li><a class="dropdown-item" href="#">학생회소개</a></li>
+						<li><a class="dropdown-item" href="#">오시는 길</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="navbar-nav dropdown-content">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						교수소개
+					</a>
+					<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+						<li><a class="dropdown-item" href="#">교수</a></li>
+						<li><a class="dropdown-item" href="#">명예교수</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="navbar-nav dropdown-content">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						학사안내
+					</a>
+					<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+						<li><a class="dropdown-item" href="#">학사공지</a></li>
+						<li><a class="dropdown-item" href="#">교육과정</a></li>
+						<li><a class="dropdown-item" href="#">편성교과목</a></li>
+						<li><a class="dropdown-item" href="#">학사정보</a></li>
+						<li><a class="dropdown-item" href="#">학사일정</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="navbar-nav dropdown-content">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						입학안내
+					</a>
+					<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+						<li><a class="dropdown-item" href="#">모집요강</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="navbar-nav dropdown-content">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						커뮤니티
+					</a>
+					<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+						<li><a class="dropdown-item" href="#">공지사항</a></li>
+						<li><a class="dropdown-item" href="#">갤러리</a></li>
+						<li><a class="dropdown-item" href="#">서식자료실</a></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
-		
 
 
 		<form class="row g-3">
@@ -70,26 +133,5 @@
 				<button type="submit" class="btn btn-primary mb-3">Login</button>
 			</div>
 		</form>
-
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-				<ul class="navbar-nav">
-					<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Dropdown
-					</a>
-					<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-						<li><a class="dropdown-item" href="#">Action</a></li>
-						<li><a class="dropdown-item" href="#">Another action</a></li>
-						<li><a class="dropdown-item" href="#">Something else here</a></li>
-					</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
 	</div>
 </nav>

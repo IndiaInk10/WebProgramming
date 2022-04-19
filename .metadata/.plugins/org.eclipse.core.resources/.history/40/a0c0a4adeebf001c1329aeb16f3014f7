@@ -1,0 +1,4 @@
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+<script src="${pageContext.request.contextPath}/bootstrap-4.6.1-dist/jquery/jquery-3.6.0.slim.min.js"></script>
+<script src="${pageContext.request.contextPath}/popper.js_2.4.4/popper.min.js"></script>
+<script src="${pageContext.request.contextPath}/bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
