@@ -1,0 +1,21 @@
+<br> <%@ page language="java" pageEncoding="UTF-8" %>
+<footer class="container">
+	<p>&copy; Home Appliance Market</p>
+</footer>
+<script src="${pageContext.request.contextPath}/bootstrap-5.1.3-dist/jquery/jquery-3.6.0.slim.min.js"></script>
+<script src="${pageContext.request.contextPath}/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+	var CMS = {"contentEditAuth":false,"isDevelopAllContent":false,"editImageLimitSize":1200,"isCallAdm":false,"editActive":true,"resourcePath":"\/${pageContext.request.contextPath}\/project\/_res\/knu\/aisw\/","excludePrintSelector":"","locale":"ko","isCToken":true,"smoothScroll":"Y","mainContentId":"cms-content","appKey":"","contentEditOnlyMain":false,"servicePort":"","devContentKey":null,"subContentKeyMap":{},"boardNo":null,"menuCd":"8068","ctx":"","sslPort":"","isMobileSite":false,"tokenSec":"0","editorVendor":"froala","localeScriptPath":"\/_custom\/knu\/resource\/js\/","mainContentKey":"\/aisw\/_content\/intro","printClass":"cms-print","pageKind":"STATIC","editClass":"cms-edit","cherryPath":"\/_fox","siteId":"aisw","isDevelop":false,"device":"pc","isSSL":false}, ctx = '', locale = 'ko';
+
+//]]>
+</script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/_share/js/scroll.js"></script>
+<script src="${pageContext.request.contextPath}/project/_res/knu/_share/js/cms-commondc50.js?00817" defer type="text/javascript" ></script>
+<script src="${pageContext.request.contextPath}/project/_res/knu/aisw/js/cms-common07aa.js?73967" defer type="text/javascript" ></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/aisw/js/header.content0b7a.js" ></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/aisw/js/greetings.content350a.js?73966" ></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/_share/js/footer-default.widget87c5.js?14022" ></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/_share/js/gnb-mobile.widget2fae.js?42876" ></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/_share/js/pull-down-menu.widget9d66.js?00425" ></script>
