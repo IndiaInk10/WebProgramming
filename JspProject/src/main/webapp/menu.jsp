@@ -1,6 +1,6 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
 <nav class="navbar navbar-expand navbar-light bg-light">
-	<div class="container-sm justify-content-between">
+	<div class="container-sm d-flex justify-content-between">
 
 		<div class="row align-items-center">
 
@@ -8,7 +8,7 @@
 				<div class="navbar-header">
 					<div class="bottom-header-box">
 						<h1>
-							<a href="${pageContext.request.contextPath}/index.jsp" title="홈 바로가기">
+							<a href="${pageContext.request.contextPath}/index.jsp" style="text-decoration: none" title="홈 바로가기">
 								<div>
 									<img src="${pageContext.request.contextPath}/project/_res/knu/_share/img/common/img-logo.png" alt="KNU">
 									<br><span class="logo-txt">AI소프트웨어학과</span>

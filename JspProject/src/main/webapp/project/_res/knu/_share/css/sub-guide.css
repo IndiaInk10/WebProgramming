@@ -7,7 +7,7 @@
 .slo-p{font-weight:500;font-size:20px;line-height:30px;}
 .h4-tit01{padding:0 0 25px 0;font-size:26px;line-height:36px;}
 .h5-tit01{position:relative;padding:0 0 10px 22px;font-weight:700;font-size:18px;line-height:24px;color:#ed6d00;}
-.h5-tit01:before{content:'';position:absolute;top:3px;left:0;width:15px;height:15px;background:url(../img/common/bg-bullet01.png)no-repeat 0 0/100%;}
+.h5-tit01:before{content:'';position:absolute;top:3px;left:0;width:15px;height:15px;background:url(../img/common/bg-bullet01.png) no-repeat 0 0/100%;}
 .h5-tit02{padding:0 0 10px 0;font-weight:700;font-size:18px;line-height:24px;}
 .h6-tit01{padding:0 0 10px;font-size:17px;line-height:24px;color:#222;font-weight:500;}
 .ul-type01{padding:0 0 0 15px;}

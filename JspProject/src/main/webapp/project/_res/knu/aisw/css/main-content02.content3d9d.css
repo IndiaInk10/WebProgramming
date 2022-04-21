@@ -10,13 +10,13 @@
 .main-quick-lnk-box ul > li:after{content:'';display:block;position:absolute;bottom:0;left:50%;box-sizing:border-box;width:calc(100% - 36px);height:1px;background:rgba(144,168,192,0.3);transform:translateX(-50%);-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-o-transform:translateX(-50%);-ms-transform:translateX(-50%);}
 .main-quick-lnk-box ul > li > a{display:block;}
 .main-quick-lnk-box ul > li > a > div:after{content:'';position:absolute;bottom:20px;right:20px;display:block;margin:0 0 0 auto;width:40px;height:45px;vertical-align:bottom;}
-.main-quick-lnk-box ul > li:nth-of-type(1) > a > div:after{background:url(../img/main/ico-quick07.png)no-repeat right 0/100%;}
-.main-quick-lnk-box ul > li:nth-of-type(2) > a > div:after{background:url(../img/main/ico-quick01.png)no-repeat right 0/100%;}
-.main-quick-lnk-box ul > li:nth-of-type(3) > a > div:after{background:url(../img/main/ico-quick02.png)no-repeat right 0/100%;}
-.main-quick-lnk-box ul > li:nth-of-type(4) > a > div:after{background:url(../img/main/ico-quick03.png)no-repeat right 0/100%;}
-.main-quick-lnk-box ul > li:nth-of-type(5) > a > div:after{background:url(../img/main/ico-quick04.png)no-repeat right 0/100%;}
-.main-quick-lnk-box ul > li:nth-of-type(6) > a > div:after{background:url(../img/main/ico-quick05.png)no-repeat right 0/100%;}
-.main-quick-lnk-box ul > li:nth-of-type(7) > a > div:after{background:url(../img/main/ico-quick06.png)no-repeat right 0/100%;}
+.main-quick-lnk-box ul > li:nth-of-type(1) > a > div:after{background:url(../img/main/ico-quick07.png) no-repeat right 0/100%;}
+.main-quick-lnk-box ul > li:nth-of-type(2) > a > div:after{background:url(../img/main/ico-quick01.png) no-repeat right 0/100%;}
+.main-quick-lnk-box ul > li:nth-of-type(3) > a > div:after{background:url(../img/main/ico-quick02.png) no-repeat right 0/100%;}
+.main-quick-lnk-box ul > li:nth-of-type(4) > a > div:after{background:url(../img/main/ico-quick03.png) no-repeat right 0/100%;}
+.main-quick-lnk-box ul > li:nth-of-type(5) > a > div:after{background:url(../img/main/ico-quick04.png) no-repeat right 0/100%;}
+.main-quick-lnk-box ul > li:nth-of-type(6) > a > div:after{background:url(../img/main/ico-quick05.png) no-repeat right 0/100%;}
+.main-quick-lnk-box ul > li:nth-of-type(7) > a > div:after{background:url(../img/main/ico-quick06.png) no-repeat right 0/100%;}
 .main-quick-lnk-box ul > li > a .txt01{padding:0 0 10px;font-weight:700;font-size:20px;line-height:25px;color:#fff;}
 .main-quick-lnk-box ul > li > a .txt02{display:block;padding:0 50px 0 0;font-weight:200;font-size:16px;line-height:21px;color:rgba(255,255,255,0.5);box-sizing:border-box;vertical-align:top;}
 
