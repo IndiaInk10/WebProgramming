@@ -1,0 +1,7 @@
+/* footer.jsp a 태그에서 사용 */
+#footerA {
+    text-decoration-line:none;
+    color: blue;
+    padding-left: 5px;
+} 
+#footerA:visited {color: #FEC10D}

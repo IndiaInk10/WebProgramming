@@ -9,11 +9,13 @@
 .greeting-box .greeting-top-box .greeting-img-box{height:280px;}
 .greeting-box .greeting-top-box .greeting-img-box img{width:100%;height:100%;object-fit:cover;}
 
-.greeting-box .greeting-con-box{padding:0 30px;}
+/* 수정한 부분 */
+.greeting-box .greeting-con-box{padding:0 20px;}
 .greeting-box .greeting-con-box .greeting-txt-box{width:100%;}
 .greeting-box .greeting-con-box .greeting-txt-box p{padding:0 0 1px 0;font-weight:200;font-size:16px;line-height:24px;}
 .greeting-box .greeting-con-box .greeting-txt-box p:last-of-type{padding:0;}
-.greeting-box .greeting-con-box .greeting-txt-box p.strong-p{font-weight:500;font-size:18px;color:#ed6d00;line-height:23px;}
+.greeting-box .greeting-con-box .greeting-txt-box p.strong-p{font-weight:600;font-size:18px;color:#ed6d00;line-height:23px;}
+/* ********** */
 
 /* 수정한 부분 */
 .greeting-box .greeting-sign-box{padding:0 0 0;}

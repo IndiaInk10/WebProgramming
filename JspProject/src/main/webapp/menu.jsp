@@ -1,8 +1,8 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
 <nav class="navbar navbar-expand navbar-light bg-light">
-	<div class="container-sm d-flex justify-content-between">
+	<div class="container-sm" style="display: block">
 
-		<div class="row align-items-center">
+		<div class="row justify-content-between align-items-center">
 
 			<div class="col-sm-auto">
 				<div class="navbar-header">
@@ -20,38 +20,38 @@
 				</div>
 			</div>
 
-			<div class="col-sm-auto">
+			<div class="col-sm-auto ps-0 pe-0">
 				<div class="collapse navbar-collapse" id="navbarNavLightDropdown">
 					<ul class="navbar-nav dropdown-content">
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black">
 								학과소개
 							</a>
 							<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
 								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/intro/greetings.jsp">인사말</a></li>
-								<li><a class="dropdown-item" href="#">학과연혁</a></li>
-								<li><a class="dropdown-item" href="#">학과소개</a></li>
-								<li><a class="dropdown-item" href="#">실습실소개</a></li>
-								<li><a class="dropdown-item" href="#">동아리소개</a></li>
-								<li><a class="dropdown-item" href="#">학생회소개</a></li>
-								<li><a class="dropdown-item" href="#">오시는 길</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/intro/history04.jsp">학과연혁</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/intro/intro.jsp">학과소개</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/intro/lab.jsp">실습실소개</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/intro/circle.jsp">동아리소개</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/intro/council.jsp">학생회소개</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/intro/location.jsp">오시는 길</a></li>
 							</ul>
 						</li>
 					</ul>
 					<ul class="navbar-nav dropdown-content">
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black">
 								교수소개
 							</a>
 							<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-								<li><a class="dropdown-item" href="#">교수</a></li>
-								<li><a class="dropdown-item" href="#">명예교수</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/professor/professor.jsp">교수</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/professor/emeritus-professor.jsp">명예교수</a></li>
 							</ul>
 						</li>
 					</ul>
 					<ul class="navbar-nav dropdown-content">
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black">
 								학사안내
 							</a>
 							<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
@@ -65,7 +65,7 @@
 					</ul>
 					<ul class="navbar-nav dropdown-content">
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black">
 								입학안내
 							</a>
 							<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
@@ -75,7 +75,7 @@
 					</ul>
 					<ul class="navbar-nav dropdown-content">
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black">
 								커뮤니티
 							</a>
 							<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
@@ -88,11 +88,11 @@
 				</div>
 			</div>
 
-			<div class="col-sm-auto">
+			<div class="col-sm-auto pe-0">
 				<div class="row g-2 align-items-center">
 					<form class="col-sm-auto">
-						<div class="row g-2">
-							<div class="col-sm-auto">
+						<div class="row g-2 justify-content-end" style="max-width: 260px">
+							<div class="col-sm-8">
 								<input type="password" class="form-control" id="inputPassword2" placeholder="Search">
 							</div>
 							<div class="col-sm-auto">

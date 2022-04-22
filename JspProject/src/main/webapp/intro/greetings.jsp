@@ -3,22 +3,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%@ include file="../link.txt" %> <%-- 매번 들어감 --%>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/_res/knu/aisw/css/greetings.content350a.css?73966" />
-<title>인사말 | AI소프트웨어학과</title>
+    <link defer rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/cdn.jsdelivr.net/npm/xeicon%402.3.3/xeicon.min.css?after">
+    <link defer rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/_res/_common/css/cms.css?after" />
+    <link defer rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/_res/knu/_share/css/scroll.css?after" />
+
+    <link href="${pageContext.request.contextPath}/project/_res/knu/_share/css/cms-commonb50f.css?after" defer rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/_res/knu/_share/css/footer-default.widget87c5.css?after" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/_res/knu/_share/css/gnb-mobile.widget2fae.css?after" />
+
+    <link href="${pageContext.request.contextPath}/project/_res/knu/aisw/css/cms-common740a.css?after" defer rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/_res/knu/aisw/css/title.content350a.css?after" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/_res/knu/aisw/css/header.content0b7a.css?after" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/_res/knu/aisw/css/sub-navigation.contentf7d1.css?after" />
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/_res/knu/aisw/css/footer.content350a.css?after" />
+
+    
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/project/_res/knu/aisw/css/greetings.content350a.css?after" />
+
+    <%@ include file="../link.txt" %> <%-- 매번 들어감 --%>
+    <title>인사말 | AI소프트웨어학과</title>
 </head>
 <body>
 <div class="container">
     <%@ include file="../menu.jsp" %> <%-- 매번 들어감 --%>
     <div class="content-inner-wrap cms-print">
 	    <div class="title" data-cms-content="/aisw/_content/title">
-            <div class="page-title" style="padding: 0 0 2% 0"><h3>인사말</h3></div>
+            <div class="page-title" style="padding-bottom:2%"><h3 style="font-weight:600">인사말</h3></div>
 		</div>
 		<div class="tab"></div>
-		<div class="cms-sub-content" data-cms-sub-content="OeiseRXwkjpx">
-            <!-- 지정된 서브컨텐츠가 하나도 존재하지 않습니다. -->	
-        </div>
-        <div class="content" id="cms-content">
+        <%-- <div class="content" id="cms-content"> --%>
+        <div class="content">
             <div class="content-box">
                 <div class="greeting-box">
                     <div class="greeting-top-box" style="background-color: #007BFF; text-align: center; padding: 0 1% 0 1%">
@@ -37,7 +52,7 @@
                             <p>학생 여러분! 이제 21세기 4차 산업혁명의 시대에 여러분 스스로의 진정한 성장은 여러분 자신의 스마트한 선택과 노력에 무한한 기회가 있을 것입니다. 그 기회를 우리 강원대학교 AI소프트웨어학과가 함께 하겠습니다. 여러분의 꿈과 희망을 마음껏 펼쳐보시기 바랍니다. 감사합니다.</p>
                         </div>
                         <div class="greeting-sign-box">
-                            <p>강원대학교 AI소프트웨어학과 <span>학과장</span></p>
+                            <p class="pb-4">강원대학교 AI소프트웨어학과 <span>학과장</span></p>
                         </div>
                     </div>
                 </div>
@@ -46,5 +61,15 @@
 	</div>
 </div>
 <%@ include file="../footer.jsp" %> <%-- 매번 들어감 --%>
+
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/_common/js/cms.js?after"></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/_share/js/scroll.js?after"></script>
+<script src="${pageContext.request.contextPath}/project/_res/knu/_share/js/cms-commondc50.js?after" defer type="text/javascript" ></script>
+<script src="${pageContext.request.contextPath}/project/_res/knu/aisw/js/cms-common07aa.js?after" defer type="text/javascript" ></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/aisw/js/header.content0b7a.js?after" ></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/aisw/js/greetings.content350a.js?after" ></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/_share/js/footer-default.widget87c5.js?after" ></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/_share/js/gnb-mobile.widget2fae.js?after" ></script>
+<script defer type="text/javascript" src="${pageContext.request.contextPath}/project/_res/knu/_share/js/pull-down-menu.widget9d66.js?after" ></script>
 </body>
 </html>
