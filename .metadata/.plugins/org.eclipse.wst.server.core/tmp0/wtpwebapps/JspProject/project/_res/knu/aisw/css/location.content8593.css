@@ -7,8 +7,8 @@
 .location-box .location-con-box > div > div:last-of-type{padding:0;}
 .location-box .location-con-box > div > div dl{padding:0 0 25px 0;display:table;width:100%;table-layout:fixed;}
 .location-box .location-con-box > div > div dl:last-of-type{padding:0;}
-.location-box .location-con-box > div > div dl dt{display:table-cell;padding:0 35px 0 0;width: 65px;font-weight:500;font-size:16px;color:#000;line-height:24px;}
-.location-box .location-con-box > div > div dl dd{display:table-cell;font-size:16px;line-height:24px;}
+.location-box .location-con-box > div > div dl dt{display:table-cell;padding:0 35px 0 0;width: 105px;font-weight:500;font-size:16px;color:#000;line-height:24px;}
+.location-box .location-con-box > div > div dl dd{display:table-cell;font-size:16px;line-height:24px;text-align: right;}
 .location-box .location-con-box > div > div dl dd ul li{padding-bottom:10px;}
 
 @media screen and (max-width : 1024px){
