@@ -1,12 +1,195 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<%@ include file="../link.txt" %>
+<link defer rel="stylesheet" type="text/css" href="/JspProject/project/_res/_common/css/cms.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/_share/css/list-cal01-013b78.css" />
+<title>학사일정 | AI소프트웨어학과</title>
 </head>
 <body>
-
+<div class="container">
+<%@ include file="../menu.jsp" %>
+	<h3 class="fw-bold mb-4">학사일정</h3>
+    <script type="text/javascript">
+    //<![CDATA[
+    var resPath = '${pageContext.request.contextPath}/project/_custom/knu/resource/', isEditorImageUpload = 'true' == 'false'? false: true, clientId = 'knu', boardTy = 'college-schedule', boardNo = '1819', siteId = 'aisw';
+    //]]>
+    </script>
+    <div class="ko board list co-board ">
+        <div class="college-schedule">
+            <div class="bn-list-cal01 type01">
+                <div class="b-viewmode-box">
+                    <a class="b-view-cal-lst active" href="?mode=list" title="리스트 보기">
+                    <span class="hide">리스트 보기</span>
+                    </a>
+                    <a class="b-view-cal" href="?mode=calendar" title="캘린더 보기">
+                    <span class="hide">캘린더 보기</span>
+                    </a>
+                </div>
+                <div class="b-cal-day-box">
+                    <p>
+                        <a class="b-prev" href="?cYear=2021&amp;month=04&amp;mode=list" title="이전 보기">
+                        <span>이전</span>
+                        </a>
+                        <span>2022</span>
+                        <a class="b-next" href="?cYear=2023&amp;month=04&amp;mode=list" title="다음 보기">
+                        <span>다음</span>
+                        </a>
+                    </p>
+                    <div>
+                        <ul>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;allYn=Y" title="전체">
+                            전체 </a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=1" title="1월">1월</a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=2" title="2월">2월</a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=3" title="3월">3월</a>
+                            </li>
+                            <li class="active">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=4" title="4월">4월</a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=5" title="5월">5월</a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=6" title="6월">6월</a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=7" title="7월">7월</a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=8" title="8월">8월</a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=9" title="9월">9월</a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=10" title="10월">10월</a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=11" title="11월">11월</a>
+                            </li>
+                            <li class="">
+                            <a href="?mode=list&amp;cYear=2022&amp;month=12" title="12월">12월</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="board-wrap">
+                    <div class="b-cal-list-box">
+                        <div class="b-cal-top-box">
+                            <div>
+                                <p>
+                                    월
+                                </p>
+                                <p>
+                                    일/요일
+                                </p>
+                                <p>
+                                    내용
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                4월
+                            </p>
+                            <div>
+                                <div class="home">
+                                    <p>
+                                        6(수) ~ 6(수)
+                                    </p>
+                                    <ul>
+                                        <li>수업일수 1/3선, 장기결석 면담</li>
+                                    </ul>
+                                </div>
+                                <div class="home">
+                                    <p>
+                                        11(월) ~ 22(금)
+                                    </p>
+                                    <ul>
+                                        <li>석사학위청구논문 심사신청</li>
+                                    </ul>
+                                </div>
+                                <div class="home">
+                                    <p>
+                                        18(월) ~ 22(금)
+                                    </p>
+                                    <ul>
+                                        <li>1학기 중간 수업평가</li>
+                                    </ul>
+                                </div>
+                                <div class="home">
+                                    <p>
+                                        25(월) ~ 25(월)
+                                    </p>
+                                    <ul>
+                                        <li>수업일수 1/2선, 장기결석 면담, 수업점검</li>
+                                    </ul>
+                                </div>
+                                <div class="home">
+                                    <p>
+                                        27(수) ~ 27(수)
+                                    </p>
+                                    <ul>
+                                        <li>1학기 중간시험 종료일</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="b-btn01 type01">
+                <ul class="b-btn-wrap">
+                </ul>
+                <form name="admin-form" method="post" action="?article.offset=0&amp;articleLimit=10">
+                    <input type="hidden" name="mode"/>
+                    <input type="hidden" name="articles"/>
+                    <input type="hidden" name="confirmMode"/>
+                </form>
+                <script type="text/javascript">
+        //<![CDATA
+            $(function(){
+                $(".reference").click(function(){
+                    var val = $(this).data("value");
+                    var boardNo = $(this).data("no");
+                    var text = $(this).text();
+                    if( confirm( text  + '을(를) 하시겠습니까?' )) {
+                        $.ajax({
+                            //url : '/_custom/cnu/_common/board/college_schedule/referenceCheck.jsp',
+                            url : '?mode=referenceChk',
+                            type : 'POST',
+                            data : {
+                                reference : val,
+                                boardNo : boardNo
+                            },
+                            dataType : 'json',
+                            success : function( response ){
+                                if( response.success == true  ){
+                                    location.reload(true);
+                                }
+                            },
+                            error : function(){
+                            }	
+                        });
+                    }
+                });
+            });
+        //]]>
+                </script>
+            </div>
+        </div>
+    </div>
+</div>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

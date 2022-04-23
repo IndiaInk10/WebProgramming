@@ -62,6 +62,7 @@
 .slide-close{display:none;}
 .m-gnb-bg{display:none;}
 
+/* 추가작성한 부분 */
 nav ul {
   width: 100%;
   list-style-type: none;
@@ -71,6 +72,12 @@ nav ul {
 .dropdown-content a:hover {
   background-color: darkorange;
 }
+
+a.visit-orange:visited {
+	color: #FEC10D
+}
+
+/* ************* */
 
 @media screen and (max-width:1024px) {
 	.bottom-header-box h1{padding:18px 0 18px 10px;}
