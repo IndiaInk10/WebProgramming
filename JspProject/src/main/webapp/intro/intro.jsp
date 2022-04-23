@@ -8,7 +8,7 @@
 <body>
   <div class="container">					
   <%@ include file="../menu.jsp"%>
-    <p class="h2" style="font-weight:bold">학과소개</p>
+    <p class="h2 fw-bold">학과소개</p>
     <br>		
     <div class="content-box">
       <div class="con-box">

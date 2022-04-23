@@ -1,8 +1,8 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
-<footer class="container">
-	<div class="row justify-content-between rounded p-3" style="background: #D6D8D9">
-		<div class="col-auto ps-0">
-			<div>
+<footer class="container-sm">
+	<div class="row justify-content-between rounded" style="background: #D6D8D9; padding: 12px 12px 12px 12px">
+		<div class="col-sm-auto ps-0">
+			<div style="font-size:16px">
 				<%
 					String[] myHref = {"https://www.kangwon.ac.kr/www/selectBbsNttList.do?bbsNo=9&key=79", "https://www.kangwon.ac.kr/www/contents.do?key=334", "https://www.kangwon.ac.kr/www/contents.do?key=343", 
 									   "#", "https://www.kangwon.ac.kr/www/selectEmpList.do?key=55", "https://www.academyinfo.go.kr/popup/pubinfo1690/list.do?schlId=0000003"};
@@ -14,7 +14,7 @@
 						for(int i = 0; i < myHref.length; i++)
 						{
 				%>
-							<a class="text-decoration-none visit-orange" target="_blank" href=<%=myHref[i]%>><%=myText[i]%></a>
+							<a id="footerA" href=<%=myHref[i]%>><%=myText[i]%></a>
 				<%
 							if(i < myHref.length - 1) out.println("|");
 						}
@@ -22,13 +22,13 @@
 				%>
 			</div>
 		</div>
-		<div class="col-auto">
+		<div class="col-sm-auto">
 			<div class="dropdown">
-				<button class="btn btn-secondary dropdown-toggle px-3 py-2 fw-normal fs-4" type="button" id="dropdownMenuButton1" data-bs-offset="0,-800" data-bs-toggle="dropdown" aria-expanded="false">
+				<button class="btn btn-secondary dropdown-toggle ps-3 pe-3" type="button" id="dropdownMenuButton1" data-bs-offset="0,-800" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight:200;font-size:22px">
 					교내사이트 바로가기
 				</button>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-					<div>
+					<div style="font-size:16px">
 						<%
 							String[] otherHref = {"http://knugift.co.kr/", "https://cube.kangwon.ac.kr/portal/index", "https://cms.kangwon.ac.kr/padm/life/general-notice.do?mode=view&articleNo=243895&article.offset=760&articleLimit=10", 
 											      "http://knufc.kr/bbs/login.php", "https://tpsc.kangwon.ac.kr/", "https://curriculum.kangwon.ac.kr/", "https://linc.kangwon.ac.kr/", "https://fund.kangwon.ac.kr/", 
@@ -48,7 +48,7 @@
 								for(int i = 0; i < otherHref.length; i++)
 								{
 						%>
-									<li class="dropdown-item"><span class="px-2">•</span><a class="text-decoration-none" target="_blank" href=<%=otherHref[i]%>><%=otherText[i]%></a></li>
+									<li class="dropdown-item"><span style="padding: 0 3% 0 2%">•</span><a style="text-decoration-line:none; color:blue" href=<%=otherHref[i]%>><%=otherText[i]%></a></li>
 						<%
 								}
 							}
@@ -90,19 +90,19 @@
 		</div>
 	</div>
 	
-	<div class="row mt-3 mb-5">
-		<div class="col-auto">
+	<div class="row" style="padding: 20px 0 50px 0 !important">
+		<div class="col-sm-auto">
 			<img style="width:200px" src="${pageContext.request.contextPath}/project/_res/knu/_share/img/common/img-footer-logo.png">
 		</div>
-		<div class="col-auto p-0 ms-5">
+		<div class="col-sm-auto" style="padding-left:45px">
 			<div class="row row-cols-1" style="font-size:13px;max-width:800px">
-				<div class="col-auto pb-3">
+				<div class="col-sm-auto pb-3">
 					강원도 삼척시 중앙로 346 강원대학교 삼척캠퍼스 5공학관 5층 | 대표전화: 
 					<a style="text-decoration-line:none" href="tel:033-570-6370" title="전화걸기">033-570-6370</a>, 
 					<a style="text-decoration-line:none" href="tel:033-570-6340" title="전화걸기">6430</a>, 
 					<a style="text-decoration-line:none" href="tel:033-570-6580" title="전화걸기">6580</a> | 팩스 : 033-570-6379, 6589
 				</div>
-				<div class="col-auto">
+				<div class="col-sm-auto">
 					COPYRIGHT (C) 2017 BY KANGWON NATIONAL UNIVERSITY.ALL RIGHTS RESERVED.
 				</div>
 			</div>
@@ -110,6 +110,10 @@
 	</div>
 </footer>
 
-<%-- <script src="${pageContext.request.contextPath}/bootstrap-5.1.3-dist/jquery/jquery-3.6.0.slim.min.js"></script> --%>
-<script src="/JspProject/bootstrap-5.1.3-dist/jquery/jquery-3.6.0.slim.min.js"></script>
-<script src="/JspProject/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="${pageContext.request.contextPath}/bootstrap-5.1.3-dist/jquery/jquery-3.6.0.slim.min.js"></script>
+<script src="${pageContext.request.contextPath}/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	var CMS = {"contentEditAuth":false,"isDevelopAllContent":false,"editImageLimitSize":1200,"isCallAdm":false,"editActive":true,"resourcePath":"\/${pageContext.request.contextPath}\/project\/_res\/knu\/aisw\/","excludePrintSelector":"","locale":"ko","isCToken":true,"smoothScroll":"Y","mainContentId":"cms-content","appKey":"","contentEditOnlyMain":false,"servicePort":"","devContentKey":null,"subContentKeyMap":{},"boardNo":null,"menuCd":"8068","ctx":"","sslPort":"","isMobileSite":false,"tokenSec":"0","editorVendor":"froala","localeScriptPath":"\/_custom\/knu\/resource\/js\/","mainContentKey":"\/aisw\/_content\/intro","printClass":"cms-print","pageKind":"STATIC","editClass":"cms-edit","cherryPath":"\/_fox","siteId":"aisw","isDevelop":false,"device":"pc","isSSL":false}, ctx = '', locale = 'ko';
+//]]>
+</script>
