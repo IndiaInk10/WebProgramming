@@ -40,13 +40,6 @@
 			rs = pstmt.executeQuery();
 			
 			while(rs.next()){
-// 				String p_fileName = rs.getString("p_fileName");
-// 				String p_name = rs.getString("p_name");
-// 				String p_description = rs.getString("p_description");
-// 				String p_manufacturer = rs.getString("p_manufacturer");
-// 				String p_category = rs.getString("p_category");
-// 				String p_unitsInStock = rs.getString("p_unitsInStock");
-// 				String p_unitPrice = rs.getString("p_unitPrice");
 	%>
 	<div class="container">
 		<div class="row">
