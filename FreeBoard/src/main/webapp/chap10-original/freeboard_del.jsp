@@ -18,7 +18,6 @@ function check(){
 </HEAD>
 <BODY>
 <CENTER> 
-<%@ include file = "dbconn.jsp" %>
 <FORM name="msgdel" method=post action=freeboard_deldb.jsp>
  <input type="hidden" name="id" value="<%=request.getParameter("id")%>"  >
  <input type="hidden" name="page" value="<%=request.getParameter("page")%>"  >

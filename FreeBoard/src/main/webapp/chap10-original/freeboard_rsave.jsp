@@ -1,7 +1,7 @@
-<%@ page contentType="text/html; charset=utf-8" %>
-<%@ page language="java" import="java.sql.*,java.util.*,java.text.*" %>
-<%@ include file = "dbconn.jsp" %>
-<% request.setCharacterEncoding("euc-kr"); %>
+<%@ page contentType="text/html; charset=utf-8" %> 
+<%@ page language="java" import="java.sql.*,java.util.*,java.text.*" %> 
+<% request.setCharacterEncoding("utf-8"); %>
+<%@ include file="dbconn.jsp" %>
 <%
  String na = request.getParameter("name");
  String em = request.getParameter("email");
@@ -27,19 +27,14 @@
   String ymd=myformat.format(yymmdd);
 
   String sql=null;
-//   Connection con=null;
+//  Connection con=null;
   Statement st=null; 
   ResultSet rs=null;  
   int cnt=0; 
  
-//   try {
-//    Class.forName("org.gjt.mm.mysql.Driver");
-//   } catch (ClassNotFoundException e){
-//    out.println(e.getMessage());
-//   }
+
  
   try {
-//    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fboard?useUnicode=true&characterEncoding=euckr","root","multi");
    st = con.createStatement();
    sql = "select max(id) from  freeboard";
    rs = st.executeQuery(sql);
