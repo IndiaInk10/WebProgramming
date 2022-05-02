@@ -1,6 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8" %> 
 <%@ page language="java" import="java.sql.*,java.util.*" %> 
-<% request.setCharacterEncoding("euc-kr"); %>
+<% request.setCharacterEncoding("utf-8"); %>
 <HTML>
 <HEAD><TITLE>게시판(검색모드)</TITLE>
 </HEAD>
@@ -19,7 +19,6 @@
    <TD align=right width=70% valign=bottom>
     <FONT size=2 face=굴림>
      <SELECT name=stype >
-<%@ include file = "dbconn.jsp" %>
 <% 
  String cond = null;
  int what = 1;
@@ -95,6 +94,8 @@
   <td colspan="5" bgcolor="#1F4F8F" height="1"></td>
  </tr>
 
+<%@ include file="dbconn.jsp" %>
+
 <% 
  Vector name=new Vector();
  Vector inputdate=new Vector();
@@ -137,21 +138,10 @@
  int id=0;
  
  String em=null;
-//  Connection con= null;
+// Connection con= null;
  Statement st =null;
  ResultSet rs =null;
  
-//  try {
-//   Class.forName("org.gjt.mm.mysql.Driver");
-//  } catch (ClassNotFoundException e ) {
-//   out.println(e);
-//  }
- 
-//  try{
-//   con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fboard?useUnicode=true&characterEncoding=euckr","root","multi");
-//  } catch (SQLException e) {
-//   out.println(e);
-//  }
  
  try {
   st = con.createStatement();

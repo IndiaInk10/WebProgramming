@@ -32,28 +32,18 @@ function check() {
 <link href="filegb.css" rel="stylesheet" type="text/css">
 </HEAD>
 <BODY>
+<%@ include file="dbconn.jsp" %>
+
 <P>
-<%@ include file = "dbconn.jsp" %>
 <%
  String sql=null;
-//  Connection con= null;
+// Connection con= null;
  PreparedStatement st =null;
  ResultSet rs =null;
  int cnt=0;
  int id = Integer.parseInt(request.getParameter("id"));
  String p= request.getParameter("page");
  
-//  try {
-//   Class.forName("org.gjt.mm.mysql.Driver");
-//  } catch (ClassNotFoundException e ) {
-//   out.println(e);
-//  }
- 
-//  try{
-//   con = DriverManager.getConnection("jdbc:mysql://localhost:3306/fboard?useUnicode=true&characterEncoding=euckr","root","multi");
-//  } catch (SQLException e) {
-//   out.println(e);
-//  }
  
  try {
   sql = "select * from freeboard where id=? ";

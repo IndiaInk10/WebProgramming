@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="&lt;servlet-mapping&gt;"/>
+		<item key="selection" value=" &lt;div&gt;                                       "/>
 		<list key="findhistory">
+			<item value=" &lt;div&gt;                                       "/>
 			<item value="&lt;servlet-mapping&gt;"/>
 			<item value="&lt;script type=&quot;text/javascript&quot; src=&quot;${pageContext.request.contextPath}/popper.js_2.4.4/popper.js&quot;&gt;&lt;/script&gt;"/>
 			<item value="&lt;filter&gt;"/>
