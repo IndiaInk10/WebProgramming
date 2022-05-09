@@ -9,14 +9,14 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class="text-center display-5">
-				N장 연습문제
+				6장 연습문제
 			</h1>
 		</div>
 	</div>
 	<div class="container">
 		<div class="text-center">
 			<h3>
-				<a href="#">4번 원본</a>&nbsp;&nbsp; : &nbsp;&nbsp;<a href="#">4번 수정</a>
+				<a href="../practice/ch06/form01.jsp">4번 원본</a>&nbsp;&nbsp; : &nbsp;&nbsp;<a href="form012.jsp">4번 수정</a>
 			</h3>
 			<hr>
 			<h3>
@@ -24,7 +24,7 @@
 			</h3>
 			<hr>
 			<h3>
-				<a href="#">6번 원본</a>&nbsp;&nbsp; : &nbsp;&nbsp;<a href="#">6번 수정</a>
+				<a href="../practice/ch06/form03.jsp">6번 원본</a>&nbsp;&nbsp; : &nbsp;&nbsp;<a href="form032.jsp">6번 수정</a>
 			</h3>
 			<hr>
 			<h3>
