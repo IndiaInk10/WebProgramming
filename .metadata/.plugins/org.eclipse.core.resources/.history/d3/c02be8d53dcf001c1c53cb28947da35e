@@ -1,0 +1,26 @@
+<%@ page contentType="text/html; charset=utf-8"%>
+<html>
+<head>
+<title>Implicit Objects</title>
+</head>
+<body>
+	<form action="form032_process.jsp" method="post">
+        <div class="form-group row">
+            <label class="col-2">좋아하는과일<label>
+            <div class="col-10">
+                오렌지<input type="checkbox" name="FruitGroup" value="Orange" /> 
+                사과<input type="checkbox" name="FruitGroup" value="Apple" /> 
+                바나나<input type="checkbox" name="FruitGroup" value="Banana" /> 
+            <div>
+        </div>
+        <p>	연락처 : <select name="phone1">
+				<option value="010">010</option>
+				<option value="011">011</option>
+				<option value="016">016</option>
+				<option value="019">019</option>
+        </select> - <input type="text" maxlength="4" size="4" name="phone2"> -
+        <input type="text" maxlength="4" size="4" name="phone3">
+		<input type="submit" value="전송" />
+	</form>
+</body>
+</html>
