@@ -1,0 +1,5 @@
+127.0.0.1 - - [17/May/2022:12:45:45 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [17/May/2022:12:45:46 +0900] "GET /FreeBoard/chap10-original/freeboard_list.jsp HTTP/1.1" 200 3641
+0:0:0:0:0:0:0:1 - - [17/May/2022:12:45:47 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [17/May/2022:12:46:32 +0900] "GET /FreeBoard/chap10-original/freeboard_read.jsp?id=1&page=1 HTTP/1.1" 200 1428
+0:0:0:0:0:0:0:1 - - [17/May/2022:12:46:43 +0900] "GET /FreeBoard/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535

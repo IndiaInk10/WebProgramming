@@ -2154,3 +2154,608 @@ Caused by: java.util.zip.ZipException: invalid CEN header (bad entry name)
 	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.resetZipFile(JavaEEBinaryComponentLoadAdapter.java:67)
 	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:51)
 	... 69 more
+!SESSION 2022-05-16 09:02:39.772 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.fullversion=17.0.2+8
+JRE 17 Windows 10 amd64-64-Bit Compressed References 20220128_95 (JIT enabled, AOT enabled)
+OpenJ9   - 9dccbe076
+OMR      - dac962a28
+JCL      - 64cd399ca28 based on jdk-17.0.2+8
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-05-16 09:03:02.833
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-16 09:03:02.833
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6fcbd34b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d1b147c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-16 09:03:02.833
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@a794a9ea,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c26fdeb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-16 09:03:08.772
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-16 09:03:08.776
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-16 09:03:08.948
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\india'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2022-05-16 09:03:09.347
+!MESSAGE C:\Users\india\eclipse-workspaces\Web_Programming\JspProject\src\main\webapp\project\aisw\community\2022학년도_부·복수전공_선발_계획_안내7bc1.zip
+!STACK 0
+org.eclipse.jst.jee.archive.ArchiveOpenFailureException: C:\Users\india\eclipse-workspaces\Web_Programming\JspProject\src\main\webapp\project\aisw\community\2022학년도_부·복수전공_선발_계획_안내7bc1.zip
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:53)
+	at org.eclipse.jst.j2ee.internal.archive.JavaEEArchiveUtilities.openBinaryArchive(JavaEEArchiveUtilities.java:254)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper$ArchiveCache.openArchive(JavaEEBinaryComponentHelper.java:612)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.openArchive(JavaEEBinaryComponentHelper.java:470)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getUniqueArchive(JavaEEBinaryComponentHelper.java:422)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getArchive(JavaEEBinaryComponentHelper.java:415)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getJavaEEQuickPeek(JavaEEBinaryComponentHelper.java:98)
+	at org.eclipse.jst.j2ee.project.JavaEEProjectUtilities.getJ2EEComponentType(JavaEEProjectUtilities.java:273)
+	at org.eclipse.jst.j2ee.internal.common.exportmodel.JEEHeirarchyExportParticipant.isChildModule(JEEHeirarchyExportParticipant.java:81)
+	at org.eclipse.wst.common.componentcore.internal.flat.GlobalHeirarchyParticipant.isChildModule(GlobalHeirarchyParticipant.java:52)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.shouldAddComponentFile(FlatVirtualComponent.java:284)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addFile(VirtualComponentFlattenUtility.java:123)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembersInternal(VirtualComponentFlattenUtility.java:99)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembersInternal(VirtualComponentFlattenUtility.java:96)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembersInternal(VirtualComponentFlattenUtility.java:96)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembersInternal(VirtualComponentFlattenUtility.java:96)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembers(VirtualComponentFlattenUtility.java:51)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.treeWalk(FlatVirtualComponent.java:230)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.cacheResources(FlatVirtualComponent.java:188)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.getChildModules(FlatVirtualComponent.java:160)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getExportModelChildren(FlatComponentDeployable.java:261)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getModules(FlatComponentDeployable.java:272)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getChildModules(TomcatServer.java:392)
+	at org.eclipse.wst.server.core.internal.Server.getChildModules(Server.java:2649)
+	at org.eclipse.wst.server.core.internal.Server.visitModule(Server.java:3070)
+	at org.eclipse.wst.server.core.internal.Server.visit(Server.java:3051)
+	at org.eclipse.wst.server.core.internal.Server.getAllModules(Server.java:1554)
+	at org.eclipse.wst.server.ui.internal.cnf.ServersView2$3.run(ServersView2.java:193)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.zip.ZipException: invalid CEN header (bad entry name)
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1598)
+	at java.base/java.util.zip.ZipFile$Source.checkAndAddEntry(ZipFile.java:1209)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1537)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities$1.<init>(ManifestUtilities.java:259)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.newZipFile(ManifestUtilities.java:259)
+	at org.eclipse.jst.jee.archive.internal.ArchiveUtil.newZipFile(ArchiveUtil.java:248)
+	at org.eclipse.jst.jee.archive.internal.ArchiveUtil.newZipFile(ArchiveUtil.java:234)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.resetZipFile(JavaEEBinaryComponentLoadAdapter.java:67)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:51)
+	... 28 more
+
+!ENTRY com.wakatime.eclipse.plugin 1 0 2022-05-16 09:03:12.430
+!MESSAGE Upgrading wakatime-cli ...
+
+!ENTRY com.wakatime.eclipse.plugin 2 0 2022-05-16 09:03:12.434
+!MESSAGE Warning
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.net.URI.getHost()" because "uri" is null
+	at org.eclipse.egit.core.EclipseProxySelector.select(EclipseProxySelector.java:38)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1232)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1665)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at java.base/java.net.URL.openStream(URL.java:1161)
+	at com.wakatime.eclipse.plugin.Dependencies.downloadFile(Dependencies.java:252)
+	at com.wakatime.eclipse.plugin.Dependencies.installCLI(Dependencies.java:172)
+	at com.wakatime.eclipse.plugin.WakaTime.checkCLI(WakaTime.java:205)
+	at com.wakatime.eclipse.plugin.WakaTime.access$0(WakaTime.java:191)
+	at com.wakatime.eclipse.plugin.WakaTime$1.run(WakaTime.java:134)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.ui.internal.Workbench$$Lambda$186/0x0000000057a62a40.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui 4 0 2022-05-16 09:03:12.438
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.net.URI.getHost()" because "uri" is null
+	at org.eclipse.egit.core.EclipseProxySelector.select(EclipseProxySelector.java:38)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1232)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1665)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at com.wakatime.eclipse.plugin.Dependencies.downloadFile(Dependencies.java:266)
+	at com.wakatime.eclipse.plugin.Dependencies.installCLI(Dependencies.java:172)
+	at com.wakatime.eclipse.plugin.WakaTime.checkCLI(WakaTime.java:205)
+	at com.wakatime.eclipse.plugin.WakaTime.access$0(WakaTime.java:191)
+	at com.wakatime.eclipse.plugin.WakaTime$1.run(WakaTime.java:134)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.ui.internal.Workbench$$Lambda$186/0x0000000057a62a40.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+!SESSION 2022-05-16 12:09:08.635 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.fullversion=17.0.2+8
+JRE 17 Windows 10 amd64-64-Bit Compressed References 20220128_95 (JIT enabled, AOT enabled)
+OpenJ9   - 9dccbe076
+OMR      - dac962a28
+JCL      - 64cd399ca28 based on jdk-17.0.2+8
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-05-16 12:09:30.458
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-16 12:09:30.458
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@ed18526d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@8238824d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-16 12:09:30.458
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@e644726c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@410f5094,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-16 12:09:33.772
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-16 12:09:33.772
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-16 12:09:35.296
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\india'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.wakatime.eclipse.plugin 1 0 2022-05-16 12:09:36.830
+!MESSAGE wakatime-cli is up to date.
+!SESSION 2022-05-17 12:44:53.146 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.fullversion=17.0.2+8
+JRE 17 Windows 10 amd64-64-Bit Compressed References 20220128_95 (JIT enabled, AOT enabled)
+OpenJ9   - 9dccbe076
+OMR      - dac962a28
+JCL      - 64cd399ca28 based on jdk-17.0.2+8
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2022-05-17 12:45:15.597
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-17 12:45:15.597
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ac687d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@e6e36986,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-17 12:45:15.597
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@e6f06ea6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1cdb2fde,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-17 12:45:18.877
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-17 12:45:18.877
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-17 12:45:20.831
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\india'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.wakatime.eclipse.plugin 1 0 2022-05-17 12:45:24.099
+!MESSAGE Upgrading wakatime-cli ...
+
+!ENTRY com.wakatime.eclipse.plugin 2 0 2022-05-17 12:45:24.103
+!MESSAGE Warning
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.net.URI.getHost()" because "uri" is null
+	at org.eclipse.egit.core.EclipseProxySelector.select(EclipseProxySelector.java:38)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1232)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1665)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at java.base/java.net.URL.openStream(URL.java:1161)
+	at com.wakatime.eclipse.plugin.Dependencies.downloadFile(Dependencies.java:252)
+	at com.wakatime.eclipse.plugin.Dependencies.installCLI(Dependencies.java:172)
+	at com.wakatime.eclipse.plugin.WakaTime.checkCLI(WakaTime.java:205)
+	at com.wakatime.eclipse.plugin.WakaTime.access$0(WakaTime.java:191)
+	at com.wakatime.eclipse.plugin.WakaTime$1.run(WakaTime.java:134)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.ui.internal.Workbench$$Lambda$186/0x00000000f68e84b0.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.ui 4 0 2022-05-17 12:45:24.115
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.net.URI.getHost()" because "uri" is null
+	at org.eclipse.egit.core.EclipseProxySelector.select(EclipseProxySelector.java:38)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1232)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1665)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at com.wakatime.eclipse.plugin.Dependencies.downloadFile(Dependencies.java:266)
+	at com.wakatime.eclipse.plugin.Dependencies.installCLI(Dependencies.java:172)
+	at com.wakatime.eclipse.plugin.WakaTime.checkCLI(WakaTime.java:205)
+	at com.wakatime.eclipse.plugin.WakaTime.access$0(WakaTime.java:191)
+	at com.wakatime.eclipse.plugin.WakaTime$1.run(WakaTime.java:134)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.ui.internal.Workbench$$Lambda$186/0x00000000f68e84b0.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2022-05-17 12:45:40.914
+!MESSAGE C:\Users\india\eclipse-workspaces\Web_Programming\JspProject\src\main\webapp\project\aisw\community\2022학년도_부·복수전공_선발_계획_안내7bc1.zip
+!STACK 0
+org.eclipse.jst.jee.archive.ArchiveOpenFailureException: C:\Users\india\eclipse-workspaces\Web_Programming\JspProject\src\main\webapp\project\aisw\community\2022학년도_부·복수전공_선발_계획_안내7bc1.zip
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:53)
+	at org.eclipse.jst.j2ee.internal.archive.JavaEEArchiveUtilities.openBinaryArchive(JavaEEArchiveUtilities.java:254)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper$ArchiveCache.openArchive(JavaEEBinaryComponentHelper.java:612)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.openArchive(JavaEEBinaryComponentHelper.java:470)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getUniqueArchive(JavaEEBinaryComponentHelper.java:422)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getArchive(JavaEEBinaryComponentHelper.java:415)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getJavaEEQuickPeek(JavaEEBinaryComponentHelper.java:98)
+	at org.eclipse.jst.j2ee.project.JavaEEProjectUtilities.getJ2EEComponentType(JavaEEProjectUtilities.java:273)
+	at org.eclipse.jst.j2ee.internal.common.exportmodel.JEEHeirarchyExportParticipant.isChildModule(JEEHeirarchyExportParticipant.java:81)
+	at org.eclipse.wst.common.componentcore.internal.flat.GlobalHeirarchyParticipant.isChildModule(GlobalHeirarchyParticipant.java:52)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.shouldAddComponentFile(FlatVirtualComponent.java:284)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addFile(VirtualComponentFlattenUtility.java:123)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembersInternal(VirtualComponentFlattenUtility.java:99)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembersInternal(VirtualComponentFlattenUtility.java:96)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembersInternal(VirtualComponentFlattenUtility.java:96)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembersInternal(VirtualComponentFlattenUtility.java:96)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembers(VirtualComponentFlattenUtility.java:51)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.treeWalk(FlatVirtualComponent.java:230)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.cacheResources(FlatVirtualComponent.java:188)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.getChildModules(FlatVirtualComponent.java:160)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getExportModelChildren(FlatComponentDeployable.java:261)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getModules(FlatComponentDeployable.java:272)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getChildModules(TomcatServer.java:392)
+	at org.eclipse.wst.server.core.internal.Server.getChildModules(Server.java:2649)
+	at org.eclipse.wst.server.core.internal.Server.visitModule(Server.java:3070)
+	at org.eclipse.wst.server.core.internal.Server.visit(Server.java:3051)
+	at org.eclipse.wst.server.core.ServerUtil.containsModule(ServerUtil.java:747)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.getServer(RunOnServerActionDelegate.java:112)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:297)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:766)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:43)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:419)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:262)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:188)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:100)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:422)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:453)
+	at org.eclipse.jface.action.ActionContributionItem$$Lambda$427/0x00000000f7c0a7a8.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.ui.internal.Workbench$$Lambda$186/0x00000000f68e84b0.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.util.zip.ZipException: invalid CEN header (bad entry name)
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1598)
+	at java.base/java.util.zip.ZipFile$Source.checkAndAddEntry(ZipFile.java:1209)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1537)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1315)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities$1.<init>(ManifestUtilities.java:259)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.newZipFile(ManifestUtilities.java:259)
+	at org.eclipse.jst.jee.archive.internal.ArchiveUtil.newZipFile(ArchiveUtil.java:248)
+	at org.eclipse.jst.jee.archive.internal.ArchiveUtil.newZipFile(ArchiveUtil.java:234)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.resetZipFile(JavaEEBinaryComponentLoadAdapter.java:67)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:51)
+	... 69 more
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2022-05-17 12:45:41.018
+!MESSAGE C:\Users\india\eclipse-workspaces\Web_Programming\FreeBoard\src\main\webapp\Resources\freeboard_save.zip
+!STACK 0
+org.eclipse.jst.jee.archive.ArchiveOpenFailureException: C:\Users\india\eclipse-workspaces\Web_Programming\FreeBoard\src\main\webapp\Resources\freeboard_save.zip
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:56)
+	at org.eclipse.jst.j2ee.internal.archive.JavaEEArchiveUtilities.openBinaryArchive(JavaEEArchiveUtilities.java:254)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper$ArchiveCache.openArchive(JavaEEBinaryComponentHelper.java:612)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.openArchive(JavaEEBinaryComponentHelper.java:470)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getUniqueArchive(JavaEEBinaryComponentHelper.java:422)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getArchive(JavaEEBinaryComponentHelper.java:415)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getJavaEEQuickPeek(JavaEEBinaryComponentHelper.java:98)
+	at org.eclipse.jst.j2ee.project.JavaEEProjectUtilities.getJ2EEComponentType(JavaEEProjectUtilities.java:273)
+	at org.eclipse.jst.j2ee.internal.common.exportmodel.JEEHeirarchyExportParticipant.isChildModule(JEEHeirarchyExportParticipant.java:81)
+	at org.eclipse.wst.common.componentcore.internal.flat.GlobalHeirarchyParticipant.isChildModule(GlobalHeirarchyParticipant.java:52)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.shouldAddComponentFile(FlatVirtualComponent.java:284)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addFile(VirtualComponentFlattenUtility.java:123)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembersInternal(VirtualComponentFlattenUtility.java:99)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembersInternal(VirtualComponentFlattenUtility.java:96)
+	at org.eclipse.wst.common.componentcore.internal.flat.VirtualComponentFlattenUtility.addMembers(VirtualComponentFlattenUtility.java:51)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.treeWalk(FlatVirtualComponent.java:230)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.cacheResources(FlatVirtualComponent.java:188)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.getChildModules(FlatVirtualComponent.java:160)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getExportModelChildren(FlatComponentDeployable.java:261)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.getModules(FlatComponentDeployable.java:272)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getChildModules(TomcatServer.java:392)
+	at org.eclipse.wst.server.core.internal.Server.getChildModules(Server.java:2649)
+	at org.eclipse.wst.server.core.internal.Server.visitModule(Server.java:3070)
+	at org.eclipse.wst.server.core.internal.Server.visit(Server.java:3051)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.TasksWizardFragment.updateTasks(TasksWizardFragment.java:159)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.TasksWizardFragment.setTaskModel(TasksWizardFragment.java:145)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.getAllWizardFragments(TaskWizard.java:321)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addPages(TaskWizard.java:345)
+	at org.eclipse.wst.server.ui.internal.wizard.RunOnServerWizard.<init>(RunOnServerWizard.java:101)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:331)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:766)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:43)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:58)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:419)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launchShortcut(ContextRunner.java:262)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.selectAndLaunch(ContextRunner.java:188)
+	at org.eclipse.debug.internal.ui.contextlaunching.ContextRunner.launch(ContextRunner.java:100)
+	at org.eclipse.debug.ui.actions.AbstractLaunchToolbarAction.runInternal(AbstractLaunchToolbarAction.java:90)
+	at org.eclipse.debug.ui.actions.AbstractLaunchHistoryAction.runWithEvent(AbstractLaunchHistoryAction.java:422)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:229)
+	at org.eclipse.ui.internal.WWinPluginAction.runWithEvent(WWinPluginAction.java:218)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:453)
+	at org.eclipse.jface.action.ActionContributionItem$$Lambda$427/0x00000000f7c0a7a8.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.ui.internal.Workbench$$Lambda$186/0x00000000f68e84b0.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+Caused by: java.nio.file.NoSuchFileException: C:\Users\india\eclipse-workspaces\Web_Programming\FreeBoard\src\main\webapp\Resources\freeboard_save.zip
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:199)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1851)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1264)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities$1.<init>(ManifestUtilities.java:259)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.newZipFile(ManifestUtilities.java:259)
+	at org.eclipse.jst.jee.archive.internal.ArchiveUtil.newZipFile(ArchiveUtil.java:248)
+	at org.eclipse.jst.jee.archive.internal.ArchiveUtil.newZipFile(ArchiveUtil.java:234)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.resetZipFile(JavaEEBinaryComponentLoadAdapter.java:67)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:51)
+	... 70 more
