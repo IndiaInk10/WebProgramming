@@ -2,6 +2,7 @@
 <%@ page language="java" import="java.sql.*,java.util.*" %> 
 <HTML>
 <HEAD>
+<link href="filegb.css" rel="stylesheet" type="text/css">
 <%@ include file="../../link.txt"%>
 <SCRIPT language="javascript">
 function check(){
@@ -30,9 +31,6 @@ function check(){
  }
 }
 </SCRIPT> 
-<link href="filegb.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
 </HEAD>
 <BODY>
 <%@ include file="../../menu.jsp"%>
@@ -72,32 +70,32 @@ function check(){
    mid = rs.getInt("masterid");                                     
    rnum = rs.getInt("replynum");                             
   %>
-  <div class="container">
+<div class="container">
 	<form name="msgrewrite" action="freeboard_rsave.jsp?table=<%=table %>&id=<%=id%>&page=<%=request.getParameter("page")%>" class="form-horizontal" method="post">
 		<div class="form-group">
 			<hr style="border: solid 1px green;">
 			<h3 class="text-center bg-info">글 답변하기</h3>	
 			<hr style="border: solid 1px green;">		
 		</div>
-		<div class="form-group row" >
+		<div class="form-group row mb-3" >
 			<label class="col-2">이름</label>
 			<div class="col-6">
 				<input type="text" id="name"  name="name" class="form-control">
 			</div>
 		</div>
-		<div class="form-group row" >
+		<div class="form-group row mb-3" >
 			<label class="col-2">E-mail</label>
 			<div class="col-6">
 				<input type="text" id="email"  name="email" class="form-control">
 			</div>
 		</div>
-		<div class="form-group row" >
+		<div class="form-group row mb-3" >
 			<label class="col-2">제목</label>
 			<div class="col-10">
 				<input type="text" id="subject"  name="subject" class="form-control" value="Re :<%=rs.getString("subject")%>">
 			</div>
 		</div>		
-		<div class="form-group row" >
+		<div class="form-group row mb-3" >
 			<label class="col-2">내용</label>
 			<div class="col-10">
 				<textarea cols="65" rows="10" id="content"  name="content" class="form-control">
@@ -106,12 +104,12 @@ function check(){
 <%=cont%></textarea>
 			</div>
 		</div>
-		<div class="form-group row" >
+		<div class="form-group row mb-3" >
 			<label class="col-2">암호</label>
 			<div class="col-6">
 				<input type="password" id="password"  name="password" class="form-control">
 			</div>
-			<div class="offset-md-2 col-12">
+			<div class="offset-2 col-12">
 				(정확한 비밀번호를 입력해야만 수정이 됩니다.)
 			</div>
 		</div>

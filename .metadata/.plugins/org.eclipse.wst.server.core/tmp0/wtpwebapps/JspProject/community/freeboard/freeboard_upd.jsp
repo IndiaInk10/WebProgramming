@@ -2,6 +2,8 @@
 <%@ page language="java" import="java.sql.*" %> 
 <HTML>
 <HEAD>
+<link href="fboard.css" rel="stylesheet" type="text/css">
+<%@ include file="../../link.txt"%>
 <SCRIPT language="javascript">
 function check() {
  with(document.msgwrite){
@@ -29,10 +31,9 @@ function check() {
  }
 }
 </SCRIPT> 
-<link href="filegb.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
 </HEAD>
 <BODY>
+<%@ include file="../../menu.jsp"%>
 <%@ include file="dbconn.jsp" %>
 
 <P>
@@ -42,6 +43,7 @@ function check() {
  PreparedStatement st =null;
  ResultSet rs =null;
  int cnt=0;
+ String table = request.getParameter("table");
  int id = Integer.parseInt(request.getParameter("id"));
  String p= request.getParameter("page");
  
@@ -56,55 +58,60 @@ function check() {
   } else {
 %>
 <div class="container">
-  <form class="form-horizontal" name="msgwrite" method="post" action="freeboard_upddb.jsp?id=<%=id%>&page=<%=p%>">
+  <form class="form-horizontal" name="msgwrite" method="post" action="freeboard_upddb.jsp">
+    <input type="hidden" name="table" value="<%=table %>" >
+    <input type="hidden" name="id" value="<%=request.getParameter("id") %>"  >
+    <input type="hidden" name="page" value="<%=p %>"  >
     <div class="form-group">
       <hr style="border: solid 1px green;">
       <h3 class="text-center bg-info">글 수정하기</h3>
       <hr style="border: solid 1px green;">
     </div>
-    <div class="form-group row"> 
-      <label class="col-1">이 름</label>
-      <div class="col-4"> 
-        <input type=text name=name value="<%=rs.getString("name")%>" class="form-control">
-      </div>
-    </div>
-    <div class="form-group row"> 
-      <label class="col-1">E-mail</label>
-      <div class="col-4"> 
-        <input type=text name=email value="<%=rs.getString("email")%>" class="form-control">
-      </div>
-    </div>
-    <div class="form-group row"> 
-      <label class="col-1">제 목</label>
+    <div class="form-group row mb-3"> 
+      <label class="col-2">이 름</label>
       <div class="col-6"> 
-        <input type=text name=subject size="60" value="<%=rs.getString("subject")%>" class="form-control">
+        <input type="text" name="name" value="<%=rs.getString("name")%>" class="form-control">
       </div>
     </div>
-    <div class="form-group row"> 
-      <label class="col-1">내 용</label>
+    <div class="form-group row mb-3"> 
+      <label class="col-2">E-mail</label>
       <div class="col-6"> 
-        <textarea name=content cols="65" rows="10" class="textarea_style1"><%=rs.getString("content")%> </textarea>
+        <input type="text" name="email" value="<%=rs.getString("email")%>" class="form-control">
       </div>
     </div>
-    <div class="form-group row"> 
-      <label class="col-1">암 호</label>
-      <div class="col-6"> 
-        <input type='password' name='password'  class="form-control">
+    <div class="form-group row mb-3"> 
+      <label class="col-2">제 목</label>
+      <div class="col-10"> 
+        <input type="text" name="subject" size="60" value="<%=rs.getString("subject")%>" class="form-control">
       </div>
     </div>
-    (정확한 비밀번호를 입력해야만 수정이 됩니다.)
-    <hr style="border: solid 1px green;">
-    <div> 
-      <div> 
-        <div>
-          <div div class="row justify-content-center mt-3">
-            <div class="col-auto" width="12%"><a href="#" onClick="check();"><img src="image/ok.gif" border="0"></a></div>
-            <div class="col-auto" width="12%"><a href="#" onClick="history.go(-1)"><img src="image/cancle.gif"  border="0"></div>
-            <div class="col-auto" width="12%"><A href="freeboard_list.jsp?go=<%=request.getParameter("page") %>"> <img src="image/list.jpg" border=0></a></div>
-          </div>
-        </div>
+    <div class="form-group row mb-3"> 
+      <label class="col-2">내 용</label>
+      <div class="col-10"> 
+        <textarea name="content" cols="65" rows="10" class="form-control"><%=rs.getString("content")%> </textarea>
       </div>
     </div>
+    <div class="form-group row mb-3" >
+		<label class="col-2">암호</label>
+		<div class="col-6">
+			<input type="password" id="password"  name="password" class="form-control">
+		</div>
+		<div class="offset-2 col-12">
+			(정확한 비밀번호를 입력해야만 수정이 됩니다.)
+		</div>
+	</div>
+	<div class="form-group" >
+		<hr style="border: solid 1px green;">
+	</div>
+	<div class="form-group row">
+		<div class="col-12" style="display:inline-block; text-align:center;">
+			<a href="#" onClick="check();"><img src="image/ok.gif" class="img-fluid"></a>
+			&nbsp;&nbsp;
+			<a href="#" onClick="history.go(-1)"><img src="image/cancle.gif" class="img-fluid"></a>
+			&nbsp;&nbsp;
+			<a href="freeboard_list.jsp?table=<%=table %>&go=<%=p %>"><img src="image/list.jpg" class="img-fluid"></a>
+		</div>
+	</div>
   </form>
 </div>
 
@@ -117,5 +124,6 @@ function check() {
   out.println(e);
  } 
 %>
+<%@ include file="../../footer.jsp"%>
 </BODY>
 </HTML>

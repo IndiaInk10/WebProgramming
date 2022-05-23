@@ -20,12 +20,12 @@
                 </a>
             </li>
             <li>
-                <a class="text-decoration-none" href="#" title="자주하는 질문 바로가기">
+                <a class="text-decoration-none" href="${pageContext.request.contextPath}/community/freeboard/freeboard_list.jsp?table=faq" title="자주하는 질문 바로가기">
                     <p><span class="sub">FAQ</span><span class="title">자주하는 질문</span></p>
                 </a>
             </li>
             <li>
-                <a class="text-decoration-none" href="#" title="질문하기 바로가기">
+                <a class="text-decoration-none" href="${pageContext.request.contextPath}/community/freeboard/freeboard_list.jsp?table=qna" title="질문하기 바로가기">
                     <p><span class="sub">Q&amp;A</span><span class="title">질문하기</span></p>
                 </a>
             </li>

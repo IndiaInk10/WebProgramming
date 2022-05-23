@@ -1,7 +1,6 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
-<nav class="navbar navbar-expand navbar-light bg-light">
-	<div class="container" style="display:block">
-
+<div class="container">
+	<nav class="row navbar navbar-expand navbar-light bg-light">
 		<div class="row justify-content-between align-items-center">
 
 			<div class="col-auto">
@@ -90,23 +89,21 @@
 
 			<div class="col-auto pe-0">
 				<div class="row g-2 align-items-center">
-					<form class="col-auto">
+					<form class="col-auto m-0">
 						<div class="row g-2 justify-content-end" style="max-width: 260px">
 							<div class="col-8">
-								<input type="password" class="form-control" id="inputPassword2" placeholder="Search">
+								<input type="text" class="form-control" name="search" placeholder="Search">
 							</div>
 							<div class="col-auto">
 								<button type="button" class="btn btn-outline-success">Search</button>	
 							</div>
 						</div>
 					</form>
-					<div class="col-auto">
+					<div class="col-auto m-0">
 							<button type="submit" class="btn btn-primary">Login</button>
 					</div>
 				</div>
 			</div>
 		</div>
-
-	</div>
-
-</nav>
+	</nav>
+</div>

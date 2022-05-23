@@ -7,46 +7,48 @@
 </HEAD>
 <BODY>
 <%@ include file="dbconn.jsp" %>
-
-[<a href="freeboard_list.jsp?go=<%=request.getParameter("page")%>">게시판 목록으로 </a>]
+<%-- [<a href="freeboard_list.jsp?go=<%=request.getParameter("page")%>">게시판 목록으로 </a>] --%>
 <%
- String sql=null;
- //Connection con= null;
- PreparedStatement st =null;
- ResultSet rs =null;
- int cnt=0;
+      String sql=null;
+      //Connection con= null;
+      PreparedStatement st =null;
+      ResultSet rs =null;
+      int cnt=0;
 
- int id = Integer.parseInt(request.getParameter("id"));
+      int id = Integer.parseInt(request.getParameter("id"));
  
  
- try {
-  sql = "select * from freeboard where id=? ";
-  st = con.prepareStatement(sql);
-  st.setInt(1, id);
-  rs = st.executeQuery();
-  if (!(rs.next()))  {
-   out.println("해당 내용이 없습니다");
-  } else {
-   String pwd= rs.getString("password"); 
-   if (pwd.equals(request.getParameter("password"))) {
-    sql = "delete from freeboard where id=?";
-    st = con.prepareStatement(sql);
-    st.setInt(1, id);
-    cnt = st.executeUpdate(); 
-    if (cnt >0) 
-     out.println("정상적으로 삭제되었습니다.");
-    else 
-     out.println("삭제되지 않았습니다.");
-   } else {
-    out.println("비밀번호가 틀립니다.");
-   }
-  } 
-  rs.close();
-  st.close();
-  con.close();
- } catch (SQLException e) {
-  out.println(e);
- } 
+      try {
+            sql = "select * from " + request.getParameter("table") + " where id=? ";
+            st = con.prepareStatement(sql);
+            st.setInt(1, id);
+            rs = st.executeQuery();
+            if (!(rs.next()))  {
+                  out.println("해당 내용이 없습니다");
+            } else {
+                  String pwd= rs.getString("password"); 
+                  if (pwd.equals(request.getParameter("password"))) {
+                        sql = "delete from " + request.getParameter("table") + " where id=?";
+                        st = con.prepareStatement(sql);
+                        st.setInt(1, id);
+                        cnt = st.executeUpdate(); 
+                        if (cnt >0) {  %>
+      	                  <script>alert('정상적으로 삭제되었습니다.'); location.href = "freeboard_list.jsp?table=<%=request.getParameter("table") %>&go=<%=request.getParameter("page")%>"; </script>
+                  <%  	} 
+    	                  else {
+    		                  out.println("삭제되지 않았습니다.");
+    	                  }
+                  }
+    	            else {  %>
+      		      <script>alert('비밀번호가 틀립니다.'); window.history.back(); </script>
+            <%  	} 
+  	      } 
+            rs.close();
+            st.close();
+            con.close();
+      } catch (SQLException e) {
+            out.println(e);
+      } 
 %>
 </BODY>
 </HTML>

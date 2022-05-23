@@ -4,11 +4,12 @@
 <HTML>
 <HEAD><TITLE>글 읽기</TITLE>
 <%@ include file="../../link.txt"%>
-<link rel="stylesheet" type="text/css" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
 </HEAD>
 <BODY>
 <%@ include file="../../menu.jsp"%>
 <%@ include file="dbconn.jsp" %>
+<div class="container">
 <%
  String sql=null;
 // Connection con= null;
@@ -29,7 +30,7 @@
   } else {
    String em=rs.getString("email");
    if ((em != null) && (!(em.equals(""))) ) 
-    em = "<A href=mailto:" +em + ">" + rs.getString("name")+"</A>";
+    em = "<A class='text-decoration-none' href=mailto:" +em + ">" + rs.getString("name")+"</A>";
    else
     em = rs.getString("name");
    out.println("<table class='table'>");
@@ -49,19 +50,16 @@
    out.println(rs.getString("content").replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br>"));
    out.println("</td>");
    out.println("</tr>");
-   out.println("<tr>");
-   out.println("<td colspan='2'></td>");
-   out.println("</tr>");
    out.println("</table>");
   %>
   <div>
-   <div class="row justify-content-center"> 
-    <div class="col-auto" align="right" width="450"><A href="freeboard_list.jsp?table=<%=table %>&go=<%=request.getParameter("page") %>"> 
+   <div class="row justify-content-center mt-5 mb-4"> 
+    <div class="col-auto pe-0" align="right" width="450"><A href="freeboard_list.jsp?table=<%=table %>&go=<%=request.getParameter("page") %>"> 
       <img src="image/list.jpg" border=0></a>
     </div>
-	<div class="col-auto" width="70" align="right"><A href="freeboard_rwrite.jsp?table=<%=table %>&id=<%= request.getParameter("id")%>&page=<%=request.getParameter("page")%>"> <img src="image/reply.jpg" border=0></A></div>
-	<div class="col-auto" width="70" align="right"><A href="freeboard_upd.jsp?table=<%=table %>&id=<%=id%>&page=1"><img src="image/edit.jpg" border=0></A></div>
-	<div class="col-auto" width="70" align="right"><A href="freeboard_del.jsp?table=<%=table %>&id=<%=id%>&page=1"><img src="image/del.jpg"  border=0></A></div>
+    <div class="col-auto pe-0" width="70" align="right"><A href="freeboard_rwrite.jsp?table=<%=table %>&id=<%= request.getParameter("id")%>&page=<%=request.getParameter("page")%>"> <img src="image/reply.jpg" border=0></A></div>
+    <div class="col-auto pe-0" width="70" align="right"><A href="freeboard_upd.jsp?table=<%=table %>&id=<%=id%>&page=1"><img src="image/edit.jpg" border=0></A></div>
+    <div class="col-auto pe-0" width="70" align="right"><A href="freeboard_del.jsp?table=<%=table %>&id=<%=id%>&page=1"><img src="image/del.jpg"  border=0></A></div>
    </div>
   </div>
   <%    
@@ -77,6 +75,7 @@
   out.println(e);
  } 
 %>
+</div>
 <%@ include file="../../footer.jsp"%>
 </BODY>
 </HTML>

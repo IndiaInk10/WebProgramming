@@ -2,6 +2,8 @@
 <%@ page language="java" import="java.io.*,java.sql.*,java.util.*" %> 
 <HTML>
 <HEAD>
+<link href="filegb.css" rel="stylesheet" type="text/css">
+<%@ include file="../../link.txt"%>
 <SCRIPT language="javascript">
 function check(){
  with(document.msgdel){		
@@ -14,49 +16,37 @@ function check(){
  }
 }
 </SCRIPT> 
-<link href="freeboard.css" rel="stylesheet" type="text/css">
 </HEAD>
 <BODY>
-<CENTER> 
-<FORM name="msgdel" method=post action=freeboard_deldb.jsp>
- <input type="hidden" name="id" value="<%=request.getParameter("id")%>"  >
- <input type="hidden" name="page" value="<%=request.getParameter("page")%>"  >
- <table width="70%" cellspacing="0" cellpadding="2">         
-  <tr>                                                              
-   <td colspan="2" bgcolor="#1F4F8F" height="1"></td>                      
-  </tr>                                                             
-  <tr>                                                               
-   <td colspan="2" bgcolor="#DFEDFF" height="20" class="notice"><b>글 삭제하기</b></td>                                                                  
-  </tr>                                                             
-  <tr>                                                              
-   <td colspan="2" bgcolor="#1F4F8F" height="1"></td>             
-  </tr>                                                            
-  <tr>                                                               
-   <td width="124" height="30" bgcolor="#f4f4f4" align='center' class='style2'>비밀번호</td>  
-   <td width="494"><input type="password" name=password class='input_style1'></td>                                                            
-  </tr>                                                             
-  <tr>                                                               
-   <td colspan="2" height="1" class='button'></td>          
-  </tr>                                                            
-  <tr>                                                            
-   <td colspan="2" height="1" bgcolor="#1F4F8F"></td>                              
-  </tr>                                                            
-  <tr>                                                               
-   <td colspan="2" height="10"></td>                                               
-  </tr>                                                             
-  <tr>                                                              
-   <td colspan="2" align="right">                                     
-    <table width="100%" border="0" cellpadding="4" cellspacing="4">        
-     <tr>                                                          
-      <td width="84%">&nbsp;</td>                                             
-      <td width="8%"><a href="freeboard_list.jsp?go=<%=request.getParameter("page")%> "><img src="image/list.jpg" width="48" height="19" border="0"></a></td>
-      <td width="8%"><a href="#" onClick="check();"><img src="image/del.jpg" width="46" height="19" border="0"></a></td>
-	 </tr>                                                      
-    </table>                                                      
-   </td>                                                          
-  </tr>                                                            
- </table>   
-</form>
-</center>
+<%@ include file="../../menu.jsp"%>
+<div class="container">
+    <form class="form-horizontal" name="msgdel" method="post" action="freeboard_deldb.jsp">
+        <input type="hidden" name="table" value="<%=request.getParameter("table")%>" >
+        <input type="hidden" name="id" value="<%=request.getParameter("id")%>"  >
+        <input type="hidden" name="page" value="<%=request.getParameter("page")%>"  >         
+        <div class="form-group">
+			<hr style="border: solid 1px green;">
+			<h3 class="text-center bg-info">글 삭제하기</h3>	
+			<hr style="border: solid 1px green;">		
+		</div>                                                            
+        <div class="form-group row">                                                               
+            <label class="col-2">비밀번호</label>
+            <div class="col-6">
+                <input type="password" name="password" class='form-control'>
+            </div>                                                            
+        </div>
+        <div class="form-group" >
+			<hr style="border: solid 1px green;">
+		</div>
+        <div class="form-group row">                                     
+            <div class="col-12" style="display:inline-block; text-align:center;">        
+                <a href="freeboard_list.jsp?table=<%=request.getParameter("table") %>&go=<%=request.getParameter("page")%> "><img src="image/list.jpg" class="img-fluid"></a>
+                &nbsp;&nbsp;
+                <a href="#" onClick="check();"><img src="image/del.jpg" class="img-fluid"></a>                                          
+            </div>                                                      
+        </div>                                                                                                                      
+    </form>
+</div>
+<%@ include file="../../footer.jsp"%>
 </BODY>
 </HTML>
