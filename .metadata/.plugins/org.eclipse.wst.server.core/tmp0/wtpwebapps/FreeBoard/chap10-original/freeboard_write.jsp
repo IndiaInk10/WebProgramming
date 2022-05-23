@@ -1,7 +1,8 @@
 <%@ page contentType="text/html; charset=utf-8"%>
 <HTML>                                         
-<HEAD>                                       
-<SCRIPT language="javascript">                              
+<HEAD>                        
+<%@ include file="../../link.txt"%>               
+<SCRIPT language="javascript">               
 function check(){                                         
  with(document.msgwrite){                      
   if(subject.value.length == 0){                  
@@ -31,10 +32,11 @@ function check(){
 <link href="filegb.css" rel="stylesheet" type="text/css">   
 <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
 </HEAD>                                       
-<BODY>                                        
+<BODY>
+<%@ include file="../../menu.jsp"%>                                        
 <P>                                           
 <div class="container">           
-<FORM class="form-horizontal" name="msgwrite" method="post" action="freeboard_save.jsp">                                                                  
+<FORM class="form-horizontal" name="msgwrite" method="post" action="freeboard_save.jsp?table=<%=request.getParameter("table") %>">                                                                  
  <div class="form-group">         
   <hr style="border: solid 1px green;">                               
   <h3 class="text-center bg-info">새글 쓰기</h3>
@@ -92,6 +94,7 @@ function check(){
   <%-- </div> --%>
  <%-- </div> --%>
 </FORM>                                        
-</div>                                      
+</div>
+<%@ include file="../../footer.jsp"%>               
 </BODY>                                        
 </HTML>  

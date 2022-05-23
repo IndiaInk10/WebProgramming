@@ -1,0 +1,110 @@
+index.jsp
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Al소프트웨어학과</title>
+<%@ include file="link.txt"%>
+</head>
+<body>
+<div class="container">
+<%@ include file="menu.jsp"%>
+<%@ include file="mainimage_first.jsp"%>
+<%@ include file="./community/freeboard/board.jsp"%>
+<%@ include file="mainimage_second.jsp"%>
+<%@ include file="footer.jsp"%>
+</div>
+</body>
+</html>
+
+mainimage_first.jsp
+<link defer rel="stylesheet" type="text/css" href="/JspProject/project/_res/_common/css/cms.css" />
+<link defer rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/_share/css/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/_share/css/main-visual-temp08.widget03b3.css" />
+<script type="text/javascript" src="/JspProject/project/_res/_common/js/jquery/jquery-2.2.4.min.js"></script>
+<script defer type="text/javascript" src="/JspProject/project/_res/_common/js/cms.js"></script>
+<script defer type="text/javascript" src="/JspProject/project/_res/knu/_share/js/swiper.min.js"></script>
+<script defer type="text/javascript" src="/JspProject/project/_res/knu/_share/js/main-visual-temp08.widget03b3.js" ></script>
+<script defer type="text/javascript" src="/JspProject/project/_res/knu/_share/js/board97c6.js" ></script>
+
+community/freeboard/board.jsp
+<link defer rel="stylesheet" type="text/css" href="/JspProject/project/_res/_common/css/cms.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/_share/css/announcement-mini-board-template-08-representative.widget1270.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/main3d9d.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/main-content01.content7204.css" />
+<script defer type="text/javascript" src="/JspProject/project/_res/_common/js/cms.js"></script>
+<script defer type="text/javascript" src="/JspProject/project/_res/knu/aisw/js/main-content01.content7204.js" ></script>
+  
+mainimage_second.jsp
+<link defer rel="stylesheet" type="text/css" href="/JspProject/project/_res/_common/css/cms.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/main3d9d.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/main-content02.content3d9d.css" />
+
+link.txt
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="/JspProject/project/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/header.content7cd5.css" />
+
+intro/greetings.jsp
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/header.content7cd5.css" />
+
+intro/history04.jsp
+<%@ include file="../link.txt"%>
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/crane-and-hyuk.content350a.css" />
+
+intro/intro.jsp
+<%@ include file="../link.txt"%>
+
+intro/lab.jsp
+<%@ include file="../link.txt"%>
+
+intro/circle.jsp
+<%@ include file="../link.txt"%>
+<link defer rel="stylesheet" type="text/css" href="/JspProject/project/_res/_common/css/cms.css" />
+<link href="/JspProject/project/_res/knu/_share/css/cms-commonb50f.css" defer rel="stylesheet" type="text/css" />
+
+intro/council.jsp
+<%@ include file="../link.txt"%>
+
+intro/location.jsp
+<%@ include file="../link.txt"%>
+<link href="/JspProject/project/_res/knu/_share/css/cms-commonb50f.css" defer rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/location.content350a.css" />
+
+
+professor/professor.jsp
+<%@ include file="../link.txt"%>
+
+professor/emeritus-professor.jsp
+<%@ include file="../link.txt"%>
+
+professor0284.jsp
+<%@ include file="../link.txt"%>
+
+
+bachelor/curriculum.jsp
+<%@ include file="../link.txt"%>
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/top-of-curriculum.content350a.css" />
+
+bachelor/subject.jsp
+<%@ include file="../link.txt"%>
+
+bachelor/info.jsp
+<%@ include file="../link.txt"%>
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/top-of-bachelors-information.content350a.css" />
+
+bachelor/calendar.jsp
+<%@ include file="../link.txt"%>
+<link defer rel="stylesheet" type="text/css" href="/JspProject/project/_res/_common/css/cms.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/_share/css/list-cal01-013b78.css" />
+
+
+admission/admission-guide.jsp
+<%@ include file="../link.txt"%>
+<link rel="stylesheet" type="text/css" href="/JspProject/project_old/_res/knu/aisw/css/admission-guide.content350a.css" />
+
+
+community/freeboard/freeboard_list.jsp?table=freeboard
+freeboard/freeboard_list.jsp?table=gallery
+freeboard/freeboard_list.jsp?table=dataroom

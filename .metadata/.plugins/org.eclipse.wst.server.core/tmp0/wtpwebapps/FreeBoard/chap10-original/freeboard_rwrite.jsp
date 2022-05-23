@@ -2,6 +2,7 @@
 <%@ page language="java" import="java.sql.*,java.util.*" %> 
 <HTML>
 <HEAD>
+<%@ include file="../../link.txt"%>
 <SCRIPT language="javascript">
 function check(){
  with(document.msgrewrite){
@@ -30,11 +31,12 @@ function check(){
 }
 </SCRIPT> 
 <link href="filegb.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
 </HEAD>
 <BODY>
+<%@ include file="../../menu.jsp"%>
 <%@ include file="dbconn.jsp" %>
-
-<P>
 
 <%
  String sql=null;
@@ -47,11 +49,12 @@ function check(){
  int step=0;
  int rnum=0;
  int mid=0;
+ String table = request.getParameter("table");
  int id = Integer.parseInt(request.getParameter("id"));
  
  
  try {
-  sql = "select * from freeboard where id="+id ;
+  sql = "select * from " + table + " where id="+id ;
   st = con.createStatement();
   rs = st.executeQuery(sql);
   if (!(rs.next()))  {
@@ -69,69 +72,68 @@ function check(){
    mid = rs.getInt("masterid");                                     
    rnum = rs.getInt("replynum");                             
   %>
-  <FORM name='msgrewrite'  method=POST action="freeboard_rsave.jsp?id=<%=id%>&page=<%=request.getParameter("page")%>">
-   <table width="600" cellspacing="0" cellpadding="2">
-    <tr> 
-     <td colspan="2" bgcolor="#1F4F8F" height="1"></td>
-    </tr>
-    <tr> 
-     <td colspan="2" bgcolor="#DFEDFF" height="20" class="notice">&nbsp;&nbsp;<font size="2">글 답변하기</font></td>
-    </tr>
-    <tr> 
-     <td colspan="2" bgcolor="#1F4F8F" height="1"></td>
-    </tr>
-    <tr> 
-     <td width="124" height="30" align="center" bgcolor="#f4f4f4">이 름</td>
-     <td width="494"  style="padding:0 0 0 10"><input type=text name=name class="input_style1"></td>
-    </tr>
-    <tr> 
-     <td width="124" align="center"  bgcolor="#f4f4f4">E-mail</td>
-     <td width="494" style="padding:0 0 0 10" height="25"><input type=text name=email class="input_style1"></td>
-    </tr>
-    <tr> 
-     <td width="124" align="center"  bgcolor="#f4f4f4">제 목</td>
-     <td width="494" style="padding:0 0 0 10" height="25">
-	 <input type=text name=subject size="60" class="input_style2" value="Re :<%=rs.getString("subject")%>"></td>
-    </tr>
-    <tr> 
-     <td width="124" height="162" align="center" valign="top" bgcolor="#f4f4f4" style="padding-top:7;">내 용</td>
-     <td width="494" valign="top"  style="padding:5 0 5 10"> 
-      <textarea name=content cols="65" rows="10" class="textarea_style1">
+  <div class="container">
+	<form name="msgrewrite" action="freeboard_rsave.jsp?table=<%=table %>&id=<%=id%>&page=<%=request.getParameter("page")%>" class="form-horizontal" method="post">
+		<div class="form-group">
+			<hr style="border: solid 1px green;">
+			<h3 class="text-center bg-info">글 답변하기</h3>	
+			<hr style="border: solid 1px green;">		
+		</div>
+		<div class="form-group row" >
+			<label class="col-2">이름</label>
+			<div class="col-6">
+				<input type="text" id="name"  name="name" class="form-control">
+			</div>
+		</div>
+		<div class="form-group row" >
+			<label class="col-2">E-mail</label>
+			<div class="col-6">
+				<input type="text" id="email"  name="email" class="form-control">
+			</div>
+		</div>
+		<div class="form-group row" >
+			<label class="col-2">제목</label>
+			<div class="col-10">
+				<input type="text" id="subject"  name="subject" class="form-control" value="Re :<%=rs.getString("subject")%>">
+			</div>
+		</div>		
+		<div class="form-group row" >
+			<label class="col-2">내용</label>
+			<div class="col-10">
+				<textarea cols="65" rows="10" id="content"  name="content" class="form-control">
 
------------------------------------------------------------------------<%=cont%></textarea></td>
-    </tr>
-    <tr> 
-     <td width="124" align="center"  bgcolor="#f4f4f4">암 호</td>
-     <td width="494" style="padding:0 0 0 10" height="25"> 
-      <input type='password' name='password'  class="input_style1"><br>(정확한 비밀번호를 입력해야만 수정이 됩니다.)
-     </td>
-    </tr>
-    <tr> 
-     <td colspan="2" height="1" class='button'></td>
-    </tr>
-    <tr> 
-     <td colspan="2" height="1" bgcolor="#1F4F8F"></td>
-    </tr>
-    <tr> 
-     <td colspan="2" height="10"></td>
-    </tr>
-    <tr> 
-     <td colspan="2" align="right"> 
-      <table width="100%" border="0" cellpadding="0" cellspacing="0">
-       <tr> 
-        <td width="64%">&nbsp;</td>
-        <td width="12%"><a href="#" onClick="check();"><img src="image/ok.gif" border="0"></a></td>
-        <td width="12%"><a href="#" onClick="history.go(-1)"><img src="image/cancle.gif" border="0"></td>
-        <td width="12%"><A href="freeboard_list.jsp?go=<%=request.getParameter("page") %>"> <img src="image/list.jpg" border=0></a></td>
-       </tr>
-      </table>
-     </td>
-    </tr>
-   </table>
-   <INPUT type="hidden" name="step" value="<%=step%>">
-   <INPUT type="hidden" name="mid" value="<%=mid%>">
-   <INPUT type="hidden" name="rnum" value="<%=rnum%>">
-  </FORM>
+----------------------------------
+<%=cont%></textarea>
+			</div>
+		</div>
+		<div class="form-group row" >
+			<label class="col-2">암호</label>
+			<div class="col-6">
+				<input type="password" id="password"  name="password" class="form-control">
+			</div>
+			<div class="offset-md-2 col-12">
+				(정확한 비밀번호를 입력해야만 수정이 됩니다.)
+			</div>
+		</div>
+		<div class="form-group" >
+			<hr style="border: solid 1px green;">
+		</div>
+		<div class="form-group row">
+			<div class="col-12" style="display:inline-block; text-align:center;">
+				<a href="#" onClick="check();"><img src="image/ok.gif" class="img-fluid"></a>
+				&nbsp;&nbsp;
+				<a href="#" onClick="history.go(-1)"><img src="image/cancle.gif" class="img-fluid"></a>
+				&nbsp;&nbsp;
+				<a href="freeboard_list.jsp?table=<%=table %>&go=<%=request.getParameter("page") %>"><img src="image/list.jpg" class="img-fluid"></a>
+			</div>
+		</div>
+		<INPUT type="hidden" name="step" value="<%=step%>">
+		<INPUT type="hidden" name="mid" value="<%=mid%>">
+		<INPUT type="hidden" name="rnum" value="<%=rnum%>">		
+	</form>
+</div>			
+
+
 <%
   }
   st.close();
@@ -140,5 +142,7 @@ function check(){
   out.println(e);
  }
 %>
+
+<%@ include file="../../footer.jsp"%>
 </BODY>
 </HTML>

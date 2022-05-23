@@ -2,6 +2,7 @@
 <%@ page language="java" import="java.sql.*,java.util.*" %> 
 <HTML>
 <HEAD><TITLE>게시판</TITLE>
+<%@ include file="../../link.txt"%>
 <link href="fboard.css" rel="stylesheet" type="text/css">
 
 <SCRIPT language="javascript">
@@ -15,6 +16,7 @@
    document.msgsearch.submit();
   }
  }
+ /*
  function rimgchg(p1,p2) {
   if (p2==1) 
    document.images[p1].src= "image/open.gif";
@@ -28,14 +30,31 @@
   else
    document.images[p1].src= "image/close.gif";
  }
+ */
 </SCRIPT>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
+
 </HEAD>
 <BODY>
+<%@ include file="../../menu.jsp"%>
 <%@ include file="dbconn.jsp" %>
+<%
+	String table = request.getParameter("table");
+  	// if (table==null) table = "freeboard";
+	String table_name = null;
+	if (table.equals("freeboard"))
+		table_name = "공지사항";
+	else if (table.equals("dataroom"))
+		table_name = "서식자료실";
+	else if (table.equals("gallery"))
+		table_name = "갤러리";
+	else if (table.equals("faq"))
+		table_name = "자주하는질문";
+	else if (table.equals("qna"))
+		table_name = "질문하기";	
+%>
+<div class="container">
 <P>
-<P align=center><FONT color=#0000ff face=굴림 size=5><STRONG>자유 게시판</STRONG></FONT></P> 
+<P align=center><FONT color=#0000ff face=굴림 size=5><STRONG><%=table_name %></STRONG></FONT></P> 
 <P>
 <CENTER>
  <TABLE class="table">
@@ -99,7 +118,7 @@
   
  try {
   st = con.createStatement();
-  String sql = "select * from freeboard order by" ;
+  String sql = "select * from " + table + " order by" ;
   sql = sql + " masterid desc, replynum, step, id" ;
   rs = st.executeQuery(sql);
 
@@ -150,13 +169,13 @@
      for(int count=0; count < stepi; count++)
       out.print("&nbsp;&nbsp;");
      out.println("<IMG name=icon"+imgcount+ " src=image/arrow.gif>");
-     out.print("<A href=freeboard_read.jsp?id=");
+     out.print("<A href=freeboard_read.jsp?table="+ table + "&id=");
      out.print(keyid.elementAt(j) + "&page=" + where );
      out.print(" onmouseover=\"rimgchg(" + imgcount + ",1)\"");
      out.print(" onmouseout=\"rimgchg(" + imgcount + ",2)\">");
     } else {
      out.println("<IMG name=icon"+imgcount+ " src=image/close.gif>");
-     out.print("<A href=freeboard_read.jsp?id=");
+     out.print("<A href=freeboard_read.jsp?table="+ table + "&id=");
      out.print(keyid.elementAt(j) + "&page=" + where );
      out.print(" onmouseover=\"imgchg(" + imgcount + ",1)\"");
      out.print(" onmouseout=\"imgchg(" + imgcount + ",2)\">");
@@ -178,13 +197,13 @@
         for(int count=0; count < stepi; count++)
 //         out.print("&nbsp;&nbsp;");
         out.println("<div class=\"container_div\"><IMG name=icon"+imgcount+ " src=image/arrow.gif>");
-        out.print("<A href=freeboard_read.jsp?id=");
+        out.print("<A href=freeboard_read.jsp?table="+ table + "&id=");
         out.print(keyid.elementAt(j) + "&page=" + where );
         out.print(" onmouseover=\"rimgchg(" + imgcount + ",1)\"");
         out.print(" onmouseout=\"rimgchg(" + imgcount + ",2)\">");
        } else {
         out.println("<div class=\"container_div\"><IMG name=icon"+imgcount+ " src=image/close.gif>");
-        out.print("<A href=freeboard_read.jsp?id=");
+        out.print("<A href=freeboard_read.jsp?table="+ table + "&id=");
         out.print(keyid.elementAt(j) + "&page=" + where );
         out.print(" onmouseover=\"imgchg(" + imgcount + ",1)\"");
         out.print(" onmouseout=\"imgchg(" + imgcount + ",2)\">");
@@ -210,8 +229,8 @@
  } 
 
  if (wheregroup > 1) {
-  out.println("[<A href=freeboard_list.jsp?gogroup=1>처음</A>]"); 
-  out.println("[<A href=freeboard_list.jsp?gogroup="+priorgroup +">이전</A>]");
+  out.println("[<A href=freeboard_list.jsp?table="+ table + "&gogroup=1>처음</A>]"); 
+  out.println("[<A href=freeboard_list.jsp?table="+ table + "&gogroup="+priorgroup +">이전</A>]");
  } else {
   out.println("[처음]") ;
   out.println("[이전]") ;
@@ -221,12 +240,12 @@
    if (jj==where) 
     out.println("["+jj+"]") ;
    else
-    out.println("[<A href=freeboard_list.jsp?go="+jj+">" + jj + "</A>]") ;
+    out.println("[<A href=freeboard_list.jsp?table="+ table + "&go="+jj+">" + jj + "</A>]") ;
    } 
   }
   if (wheregroup < totalgroup) {
-   out.println("[<A href=freeboard_list.jsp?gogroup="+ nextgroup+ ">다음</A>]");
-   out.println("[<A href=freeboard_list.jsp?gogroup="+ totalgroup + ">마지막</A>]");
+   out.println("[<A href=freeboard_list.jsp?table="+ table + "&gogroup="+ nextgroup+ ">다음</A>]");
+   out.println("[<A href=freeboard_list.jsp?table="+ table + "&gogroup="+ totalgroup + ">마지막</A>]");
   } else {
    out.println("[다음]");
    out.println("[마지막]");
@@ -241,8 +260,9 @@
   </TR>
  </TABLE>-->
 <br><br>
-<FORM class="form-inline" method="post" name="msgsearch" action="freeboard_search.jsp">
-<div class="container_div">
+<FORM class="form-inline" method="post" name="msgsearch" action="freeboard_search.jsp?table=<%=table %>">
+
+<div class="container">
  	<div class="row form-group">
    		<SELECT class="col form-control offset-md-7" name="stype" >
     		<OPTION value=1 >이름
@@ -257,13 +277,16 @@
    		<INPUT class="col form-control" type=text  name="sval" placeholder="내용입력하세요"> 
    		&nbsp;
    		<a href="#" onClick="check();"><button type="button" class="btn btn-success">검색</button></a>
+   		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    	</div>
 	<br>
-	<div align=right><A href="freeboard_write.jsp"><img src="image/write.gif" class="img-fluid"></A></div>
+	<div align=right><A href="freeboard_write.jsp?table=<%=table %>"><img src="image/write.gif" class="img-fluid"></A></div>
 </div>
-</FORM>
 
-<script src="../bootstrap-4.6.1-dist/jquery/jquery-3.5.1.js"></script>
-<script src="../bootstrap-4.6.1-dist/js/bootstrap.bundle.min.js"></script>
+</FORM>
+</TABLE>
+</CENTER>
+</div>
+<%@ include file="../../footer.jsp"%>
 </BODY>
 </HTML>

@@ -79,9 +79,9 @@
 								커뮤니티
 							</a>
 							<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-								<li><a class="dropdown-item" href="#">공지사항</a></li>
-								<li><a class="dropdown-item" href="#">갤러리</a></li>
-								<li><a class="dropdown-item" href="#">서식자료실</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/community/freeboard/freeboard_list.jsp?table=freeboard">공지사항</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/community/freeboard/freeboard_list.jsp?table=gallery">갤러리</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/community/freeboard/freeboard_list.jsp?table=dataroom">서식자료실</a></li>
 							</ul>
 						</li>
 					</ul>

@@ -10,8 +10,7 @@
     <div class="container">
         <%@ include file="menu.jsp" %> <%-- 매번 들어감 --%>
         <%-- <%@ include file="mainimage_first.jsp" %> --%>
-        <%-- <%@ include file="./community/freeboard.board/menu.jsp" %> --%>
-        <%-- <%@ include file="./community/freeboard/board.jsp" %> --%>
+        <%-- <%@ include file="./community/freeboard/board.jsp"%> --%>
         <%-- <%@ include file="mainimage_second.jsp" %> --%>
         <%@ include file="footer.jsp" %> <%-- 매번 들어감 --%>
     </div>

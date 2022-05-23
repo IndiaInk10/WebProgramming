@@ -3,9 +3,11 @@
 
 <HTML>
 <HEAD><TITLE>글 읽기</TITLE>
+<%@ include file="../../link.txt"%>
 <link rel="stylesheet" type="text/css" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
 </HEAD>
 <BODY>
+<%@ include file="../../menu.jsp"%>
 <%@ include file="dbconn.jsp" %>
 <%
  String sql=null;
@@ -13,11 +15,11 @@
  PreparedStatement st =null;
  ResultSet rs =null;
 
+ String table = request.getParameter("table");
  int id = Integer.parseInt(request.getParameter("id"));
- 
 
  try {
-  sql = "select * from freeboard where id=? ";
+  sql = "select * from " + table + " where id=? ";
   st = con.prepareStatement(sql);
   st.setInt(1, id);
   rs = st.executeQuery();
@@ -54,12 +56,12 @@
   %>
   <div>
    <div class="row justify-content-center"> 
-    <div class="col-auto" align="right" width="450"><A href="freeboard_list.jsp?go=<%=request.getParameter("page") %>"> 
+    <div class="col-auto" align="right" width="450"><A href="freeboard_list.jsp?table=<%=table %>&go=<%=request.getParameter("page") %>"> 
       <img src="image/list.jpg" border=0></a>
     </div>
-	<div class="col-auto" width="70" align="right"><A href="freeboard_rwrite.jsp?id=<%= request.getParameter("id")%>&page=<%=request.getParameter("page")%>"> <img src="image/reply.jpg" border=0></A></div>
-	<div class="col-auto" width="70" align="right"><A href="freeboard_upd.jsp?id=<%=id%>&page=1"><img src="image/edit.jpg" border=0></A></div>
-	<div class="col-auto" width="70" align="right"><A href="freeboard_del.jsp?id=<%=id%>&page=1"><img src="image/del.jpg"  border=0></A></div>
+	<div class="col-auto" width="70" align="right"><A href="freeboard_rwrite.jsp?table=<%=table %>&id=<%= request.getParameter("id")%>&page=<%=request.getParameter("page")%>"> <img src="image/reply.jpg" border=0></A></div>
+	<div class="col-auto" width="70" align="right"><A href="freeboard_upd.jsp?table=<%=table %>&id=<%=id%>&page=1"><img src="image/edit.jpg" border=0></A></div>
+	<div class="col-auto" width="70" align="right"><A href="freeboard_del.jsp?table=<%=table %>&id=<%=id%>&page=1"><img src="image/del.jpg"  border=0></A></div>
    </div>
   </div>
   <%    
@@ -75,5 +77,6 @@
   out.println(e);
  } 
 %>
+<%@ include file="../../footer.jsp"%>
 </BODY>
 </HTML>

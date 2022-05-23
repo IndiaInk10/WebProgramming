@@ -3,6 +3,7 @@
 <% request.setCharacterEncoding("utf-8"); %>
 <%@ include file="dbconn.jsp" %>
 <%
+ String table = request.getParameter("table");
  String na = request.getParameter("name");
  String em = request.getParameter("email");
  String sub=request.getParameter("subject"); 
@@ -36,7 +37,7 @@
  
   try {
    st = con.createStatement();
-   sql = "select max(id) from  freeboard";
+   sql = "select max(id) from " + table;
    rs = st.executeQuery(sql);
    if (!(rs.next())) 
     id=1;
@@ -45,14 +46,14 @@
     rs.close();
    }       
    if (step == 1) {
-    sql = "select max(replynum) from freeboard where masterid="+mid;
+    sql = "select max(replynum) from " + table + " where masterid="+mid;
     rs=st.executeQuery(sql);
     if (!(rs.next())) 
      rnum=1;
     else 
      rnum=rs.getInt(1)+1;
    } 
-   sql= "insert into freeboard(id,name,password,email,subject," ;
+   sql= "insert into " + table + "(id,name,password,email,subject," ;
    sql= sql + "content,inputdate,masterid,readcount,replynum,step)" ; 
    sql= sql + " values(" +id + ", '" +  na + "','" + pw + "','"+ em  ;
    sql= sql + "','" + sub + "','" + cont + "','" + ymd + "'," +mid+"," ;
@@ -64,5 +65,5 @@
   } catch (SQLException e) {
    out.println(e);
   }
-  response.sendRedirect("freeboard_list.jsp?go="+request.getParameter("page"));
+  response.sendRedirect("freeboard_list.jsp?table=" + table + "&go="+request.getParameter("page"));
  %>

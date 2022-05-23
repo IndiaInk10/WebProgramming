@@ -3,22 +3,41 @@
 <% request.setCharacterEncoding("utf-8"); %>
 <HTML>
 <HEAD><TITLE>게시판(검색모드)</TITLE>
+<%@ include file="../../link.txt"%>
+<link href="fboard.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
 </HEAD>
 <BODY>
+<%@ include file="../../menu.jsp"%>
+<%
+	String table = request.getParameter("table");
+  	// if (table==null) table = "freeboard";
+	String table_name = null;
+	if (table.equals("freeboard"))
+		table_name = "공지사항";
+	else if (table.equals("dataroom"))
+		table_name = "서식자료실";
+	else if (table.equals("gallery"))
+		table_name = "갤러리";
+	else if (table.equals("faq"))
+		table_name = "자주하는질문";
+	else if (table.equals("qna"))
+		table_name = "질문하기";	
+%>
 <P>
 <P align=center>
- <FONT color=#0000ff face=굴림 size=3>
- <STRONG>자유 게시판(검색모드)</STRONG>
+ <FONT color=#0000ff face=굴림 size=5>
+ <STRONG><%=table_name %>(검색모드)</STRONG>
  </FONT>
 </P> 
-<FORM method=post name=search action="freeboard_search.jsp">
- <TABLE border=0 width=95%>
-  <TR>
-   <TD align=left width=30% valign=bottom>
-    [<A href="freeboard_list.jsp">자유 게시판(일반모드)</A>]</TD>
-   <TD align=right width=70% valign=bottom>
-    <FONT size=2 face=굴림>
-     <SELECT name=stype >
+<FORM class="form-inline" method=post name=search action="freeboard_search.jsp?table=<%=request.getParameter("table") %>">
+<div class="container">
+ 	<div class="row form-group">
+		[<A href="freeboard_list.jsp?table=<%=request.getParameter("table") %>"><%=table_name %>(일반모드)</A>]
+	</div>
+	<div class="row form-group">
+     <SELECT name="stype" class="col form-control offset-md-8">
 <% 
  String cond = null;
  int what = 1;
@@ -71,28 +90,27 @@
  }
 %>
      </SELECT>
-	</FONT>
-    <INPUT type=text name="sval" value="<%=request.getParameter("sval")%>">
-    <INPUT type=submit value="검색">
-   </TD>
-  </TR>
- </TABLE>
+     &nbsp;
+    <INPUT class="col form-control" type=text name="sval" value="<%=request.getParameter("sval")%>">
+	&nbsp;
+    <INPUT type="submit" class="btn btn-success" value="검색">
+ 	</div>
+</div>
 </FORM>
+
+
 <CENTER>
-<TABLE border=0 width=600 cellpadding=4 cellspacing=0>
- <tr align="center"> 
-  <td colspan="5" height="1" bgcolor="#1F4F8F"></td>
- </tr>
- <tr align="center" bgcolor="#87E8FF"> 
-  <td width="42" bgcolor="#DFEDFF"><font size="2">번호</font></td>
-  <td width="340" bgcolor="#DFEDFF"><font size="2">제목</font></td>
-  <td width="84" bgcolor="#DFEDFF"><font size="2">등록자</font></td>
-  <td width="78" bgcolor="#DFEDFF"><font size="2">날짜</font></td>
-  <td width="49" bgcolor="#DFEDFF"><font size="2">조회</font></td>
- </tr>
- <tr align="center"> 
-  <td colspan="5" bgcolor="#1F4F8F" height="1"></td>
- </tr>
+ <TABLE class="table">
+  <thead>
+     <tr class="b-hed" align="center">
+      <th scope="col">번호</th>
+      <th scope="col" width="300">제목</th>
+      <th scope="col">등록자</th>
+      <th scope="col">날짜</th>
+      <th scope="col">조회</th>
+      <td scope="col">감춤</th>
+    </tr>
+  </thead>
 
 <%@ include file="dbconn.jsp" %>
 
@@ -149,8 +167,9 @@
   sql = sql + " order by id desc" ;
   rs = st.executeQuery(sql);
   if (!(rs.next()))  {
-   out.println("해당하는 글이 없습니다");
+   out.println("<br>해당하는 글이 없습니다");
   } else {
+	  out.println("<br>");
    do {
     keyid.addElement(new Integer(rs.getInt("id")));
     name.addElement(rs.getString("name"));
@@ -202,6 +221,27 @@
     out.println(inputdate.elementAt(j)+ "</TD>");
     out.println("<TD align=center>");
     out.println(rcount.elementAt(j)+ "</TD>");
+    
+//추가    
+	out.println("<td>");
+    if (stepi > 0 ) {
+     for(int count=0; count < stepi; count++)
+      out.print("&nbsp;&nbsp;");
+    }
+    clink = "<div class=\"container_div\"><A href=freeboard_read.jsp?id=" + keyid.elementAt(j) ;
+    clink = clink + "&page=" + where + ">" + subject.elementAt(j) + "</A>";
+    out.println(clink + "</div>");
+    
+    
+    out.println("<div class=\"container_div\" align=\"right\"><small>");
+    out.println(em+ "&nbsp;&nbsp; | &nbsp;&nbsp;");
+    out.println(inputdate.elementAt(j)+ "&nbsp;&nbsp; | &nbsp;&nbsp;조회수 : ");
+    out.println(rcount.elementAt(j)+ "</small></div>");
+    out.println("</div></TD>");   
+
+    
+    
+    
     out.println("</TR>"); 
 
    }
@@ -243,5 +283,6 @@
  }
  out.println ("검색된 글 수 :"+totalrows);
 %>
+<%@ include file="../../footer.jsp"%>
 </BODY>
 </HTML>
