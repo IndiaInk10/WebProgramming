@@ -12,7 +12,7 @@
 <div class="container">
 <%
  String sql=null;
-// Connection con= null;
+ // Connection con= null;
  PreparedStatement st =null;
  ResultSet rs =null;
 

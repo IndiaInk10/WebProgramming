@@ -1,0 +1,178 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<link defer rel="stylesheet" type="text/css" href="/JspProject/project/_res/_common/css/cms.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/_share/css/announcement-mini-board-template-08-representative.widget1270.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/main3d9d.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/main-content01.content7204.css" />
+<script defer type="text/javascript" src="/JspProject/project/_res/_common/js/cms.js"></script>
+<script defer type="text/javascript" src="/JspProject/project/_res/knu/aisw/js/main-content01.content7204.js" ></script>
+<%@ include file="dbconn.jsp" %>
+<%
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	String sql = "select id, inputdate, subject, content from ";
+	String table = "";
+	String id = "";
+	String inputdate = "";
+	String subject = "";
+	String content = "";
+%>
+<div class="main-content-wrap01 cms-edit" id="cms-content">
+	<div class="main-content-box main-content-box01 pt-5 pb-1" style="display:block;height:auto;min-height:auto;">
+		<div class="main-mini-wrap row">
+			<div class="main-mini-box main-mini-box01 col-6 pe-4">
+				<div class="mini-tab-box">
+					<ul>
+						<li class="active"><a class="mini-board-tab " href="#a" title="공지사항">공지사항</a>
+						<div class="mini-board-content">
+							<div class="main-notice-box temp08">
+								<ul>
+									<li>
+									<%
+										try {
+											table = "freeboard";
+											
+											String selectSQL = sql + table;
+											pstmt = con.prepareStatement(selectSQL);
+											rs = pstmt.executeQuery();
+											
+											if(!(rs.next())){
+												out.println("게시판에 올린 글이 없습니다");
+											}
+											else{
+												for(int i = 0 ; i < 3; i ++){
+													if(!(rs.next())){
+														break;
+													}
+													id = rs.getString("id");
+													inputdate = rs.getString("inputdate");
+													inputdate = inputdate.substring(0,8);
+													subject = rs.getString("subject");
+													content = rs.getString("content");
+									%>
+													<li>
+														<p class="mini-date">
+															<span><%=inputdate.substring(6, 8) %></span><%=(inputdate.substring(0, 5)).replace(".", "-") %>
+														</p>
+														<div class="mini-txt-box">
+															<p class="mini-title">
+																<a href="/aisw/community/notice.do?mode=view&amp;articleNo=375457" title="자세히보기"><%=subject %></a>
+															</p>
+															<p class="mini-txt">
+																<a href="/aisw/community/notice.do?mode=view&amp;articleNo=375457" title="자세히보기"><%=content %></a>
+															</p>
+														</div>
+													</li>
+									<%
+												}
+											}
+										}
+										catch(SQLException ex){
+											out.println(table + "테이블 호출이 실패했습니다.<br>");
+											out.println("SQLException: " + ex.getMessage());
+										}
+									%>
+								</ul>
+							</div>
+						</div>
+						<a class="btn-more" href="/aisw/community/notice.do" title="공지사항 바로가기 ">더보기</a></li>
+						<li><a class="mini-board-tab" href="#a" title="갤러리">갤러리</a>
+						<div class="mini-board-content">
+							<div class="main-notice-box temp08">
+								<ul>
+									<li>
+									<p class="mini-date">
+										<span>02 </span>22.06
+									</p>
+									<div class="mini-txt-box">
+										<p class="mini-title">
+											<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=81&amp;nttNo=153715&amp;key=277" title="자세히보기">2022학년도 1학기 재학생 글로벌역량개발 장학금 지급 안내</a>
+										</p>
+										<p class="mini-txt">
+											<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=81&amp;nttNo=153715&amp;key=277" title="자세히보기">2022학년도 1학기 재학 중 교내 어학원이나 사설 어학원에서 수강한 외국어 강좌 수업료 등 재학생 여러분의 글로벌 역량 개발 지원을 위한 장학금을 지급해 드리오니 많은 신청 바랍니다. 신청기간 : 2022.6.3(금）00:00~ 6.10.（금）24:00 신청주소 : https://naver.me/IGmav0WE</a>
+										</p>
+									</div>
+									</li>
+									<li>
+									<p class="mini-date">
+										<span>31 </span>22.05
+									</p>
+									<div class="mini-txt-box">
+										<p class="mini-title">
+											<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=81&amp;nttNo=153665&amp;key=277" title="자세히보기">[삼척/도계도서관] 2022학년도 6월 전자자료 이용교육 안내</a>
+										</p>
+										<p class="mini-txt">
+											<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=81&amp;nttNo=153665&amp;key=277" title="자세히보기">삼척/도계도서관에서 2022학년도 1학기 &lt;6월 온라인 전자자료 이용교육&gt; 을 운영합니다. 학생 여러분들의 많은 관심과 참여 바랍니다. 감사합니다. *기간: 6. 2. ~ 6. 8.(상설교육도 기간내에만 열립니다) *바로가기: https://bit.ly/3z8rxHV</a>
+										</p>
+									</div>
+									</li>
+									<li>
+									<p class="mini-date">
+										<span>30 </span>22.05
+									</p>
+									<div class="mini-txt-box">
+										<p class="mini-title">
+											<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=81&amp;nttNo=153656&amp;key=277" title="자세히보기">삼척캠퍼스 통학버스 임시 미운행 노선 및 변경노선 알림</a>
+										</p>
+										<p class="mini-txt">
+											<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=81&amp;nttNo=153656&amp;key=277" title="자세히보기">학교 사정으로 인하여 삼척캠퍼스 통학버스 임시 미운행 노선 및 변경 노선을 아래와 같이 알려드리니 참고하시기 바랍니다. 1. 기간 : 2022. 6. 2.(목) ~ 6. 3.(금) (2일간) 2. 미운행 노선 ○ 시내순환 노선 2~3회차 (1회차만 정상 운행) - 2회차 : 삼척캠퍼스(08:30) → 시내경유 → 삼척캠퍼스(08:40) - 3회차 : 삼척캠퍼스(09:25) → 시내경유 → 삼척캠퍼스(09:50) ○ 시내외곽 노선(해변) 1~3회차 (전 회차 미운행) 3. 변경 노선 ○ 삼척 → 도계캠퍼스 노선 2회차 (5분씩 지연) - 2회차 : 삼척캠퍼스(08:55) → 삼척문화원 건너편(09:00) → 현대아파트입구 버스정류장(09:05) → 도경사거리(09:10) → 도원생활관(09:35) → 양지갈비(고려의원 근처)(09:36) → 도계캠퍼스(09:55) ※ 그 외 통학버스는 정상 운행 4. 문의 : 행정지원과(총무팀) ☎033-570-6239</a>
+										</p>
+									</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a class="btn-more" href="https://www.kangwon.ac.kr/www/selectBbsNttList.do?bbsNo=81&key=277" target="_blank" title="학사공지 바로가기">더보기</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main-mini-box main-mini-box02 col-6 ps-4">
+				<h3 class="main-title">서식자료실</h3>
+				<div class="main-notice-box temp08">
+					<ul>
+						<li>
+						<p class="mini-date">
+							<span>26 </span>22.04
+						</p>
+						<div class="mini-txt-box">
+							<p class="mini-title">
+								<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=117&amp;nttNo=152593&amp;key=768" title="자세히보기">지역인재 7급 수습직원 취업 프로그램 참가 신청기간 연장 안내</a>
+							</p>
+							<p class="mini-txt">
+								<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=117&amp;nttNo=152593&amp;key=768" title="자세히보기">지역인재 7급 수습직원 선발시험(PSAT) 합격률 제고를 위한 취업 프로그램을 다음과 같이 운영하니, 관심있는 학생(졸업생 포함)들의 적극적인 참여를 바랍니다. 1. 모집 인원: 20명 이내 2. 지원 개요 ① 지원자격 ◦ 졸업생 또는 재학생(휴학생 포함) ※ 졸업생(2022.1월 이후 졸업자) ◦ 전학년도 성적 - 재(휴)학생: 전학년도 평균 평점 3.75이상 - 졸업생: 모집단위 석차비율 10% 이내 ※ 졸업생은 모집단위 10명 이내인 경우 석차 1등에 한해 신청 가능. ◦ 취업지원 프로그램을 성실히 수행할 수 있는자 ② 지원내역 ◦ PSAT 기출‧실전 모의고사 7회 지원 ◦ PSAT 기본강의 동영상 지원 ◦ PSAT 특강 및 2022년 지역인재 7급 합격자 특강 지원 ◦ PSAT 스터디 지원 ③ 신청기간: 2022. 4. 28.(목) ~ 2022. 5. 17.(화) 18:00 ④ 운영기간: 2022. 5. 18.(수) ~ 2022. 12. 31.(토) 3. 신청 방법 ① 진행 일정 ◦ 2022.5.11.(수) 18:00까지 취업지원과(삼척:취업지원센터) 홈페이지 신청 - 춘천캠퍼스: http://job.kangwon.ac.kr - 삼척캠퍼스: http://jobsc.kangwon.ac.kr ② 신청서작성 ◦ 신청서 작성(붙임1) ◦ 개인정보 수집 동의서 작성(붙임2) ③ 신청서제출 ◦ 각 캠퍼스 취업지원 홈페이지→취업프로그램→지원희망하기</a>
+							</p>
+						</div>
+						</li>
+						<li>
+						<p class="mini-date">
+							<span>26 </span>22.04
+						</p>
+						<div class="mini-txt-box">
+							<p class="mini-title">
+								<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=117&amp;nttNo=152582&amp;key=768" title="자세히보기">NEW ICT스타트업 챌린지 참가자 모집</a>
+							</p>
+							<p class="mini-txt">
+								<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=117&amp;nttNo=152582&amp;key=768" title="자세히보기">(재)강릉과학산업진흥원에서 추진하고 있는 NEW ICT스타트업 챌린지 &#034;ICT맞춤형 창업 프로그램&#034; 참가자 모집 안내입니다. 1. 사업개요 가. 사 업 명 : 강원형 ICT기반 미래형 일자리창출 프로젝트 나. 모집분야 : ICT맞춤형 창업 프로그램 다. 사업기간 : 사업 선정 ~ 2022. 10. 31. 라. 지원대상 : 강원도 거주자는 누구나 신청 가능(구직자, 학생, 예비창업자 등) 마. 지원분야 : ICT맞춤형 창업 프로그램 2. 신청기간 : 2022. 4. 29.(금) 18:00 까지 3. 제출 방식 : 신청서 작성 후 방문, 우편, E-mail 접수 4. 문의 : 강릉과학산업진흥원 담당 정유진 사원 * 기타 자세한 사항은 첨부파일 참고 바랍니다. *</a>
+							</p>
+						</div>
+						</li>
+						<li>
+						<p class="mini-date">
+							<span>15 </span>22.04
+						</p>
+						<div class="mini-txt-box">
+							<p class="mini-title">
+								<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=117&amp;nttNo=152427&amp;key=768" title="자세히보기">2022학년도 KCD 대특강 안내</a>
+							</p>
+							<p class="mini-txt">
+								<a href="https://www.kangwon.ac.kr/www/selectBbsNttView.do?bbsNo=117&amp;nttNo=152427&amp;key=768" title="자세히보기">.</a>
+							</p>
+						</div>
+						</li>
+					</ul>
+				</div>
+				<a class="btn-more" href="https://www.kangwon.ac.kr/www/selectBbsNttList.do?bbsNo=117&key=768&searchCtgry=%EC%B6%98%EC%B2%9C&" rel="noopener noreferrer" target="_blank" title="취업정보 바로가기">더보기</a>
+			</div>
+		</div>
+	</div>
+</div>

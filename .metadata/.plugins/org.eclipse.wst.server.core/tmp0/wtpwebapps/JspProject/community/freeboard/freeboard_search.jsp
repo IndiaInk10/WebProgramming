@@ -33,12 +33,13 @@
   </FONT>
   </P> 
   <FORM class="form-inline" method=post name=search action="freeboard_search.jsp?table=<%=request.getParameter("table") %>">
-  <div class="container">
-    <div class="row form-group">
+  <div class="container row">
+    <div class="col form-group">
       [<A href="freeboard_list.jsp?table=<%=request.getParameter("table") %>"><%=table_name %>(일반모드)</A>]
     </div>
-    <div class="row form-group">
-      <SELECT name="stype" class="col form-control offset-md-8">
+    <div class="col-5 form-group">
+     <div class="row">
+      <SELECT name="stype" class="col form-control">
   <% 
   String cond = null;
   int what = 1;
@@ -94,7 +95,8 @@
       &nbsp;
       <INPUT class="col form-control" type=text name="sval" value="<%=request.getParameter("sval")%>">
     &nbsp;
-      <INPUT type="submit" class="btn btn-success" value="검색">
+      <INPUT type="submit" class="col-auto btn btn-success" value="검색">
+     </div>
     </div>
   </div>
   </FORM>

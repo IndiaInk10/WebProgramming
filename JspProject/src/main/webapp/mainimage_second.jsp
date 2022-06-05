@@ -1,8 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<link defer rel="stylesheet" type="text/css" href="/JspProject/project/_res/_common/css/cms.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/main3d9d.css" />
+<link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/main-content02.content3d9d.css" />
 <div class="main-content-wrap02 cms-sub-content" data-cms-sub-content="NyYNUsecryIS" style="width:100%">
-	<div class="main-content-box main-content-box02 container" style="display:block;height:auto;min-height:770px">
-        <div class="main-mini-wrap row">
-            <div class="main-mini-box main-mini-box01 col-sm-6 ps-4 pe-4">
+	<div class="main-content-box main-content-box02 container pt-2" style="display:block;height:auto;min-height:auto;">
+        <div class="main-mini-wrap row justify-content-between">
+            <div class="main-mini-box main-mini-box01 col-6 pe-4">
                 <h3 class="main-title">전공소개</h3>
                 <div class="main-video-box">
                     <span class="fr-video fr-fvc fr-dvi fr-draggable" >
@@ -12,10 +15,10 @@
                 </div>
                 <a class="btn-more" href="/aisw/intro/intro.do" rel="noopener noreferrer" target="_blank" title="전공소개 바로가기" style="right:25px">더보기</a>
             </div>
-            <div class="main-mini-box main-mini-box02 col-sm-6">
+            <div class="main-mini-box main-mini-box02 col-6 ps-4 pb-5">
                 <div class="main-quick-lnk-box">
-                    <%-- <div class="scrollert">
-                        <div class="scrollert-content"> --%>
+                    <div class="scrollert">
+                        <div class="scrollert-content">
                             <ul>
                                 <li><a href="https://www.youtube.com/channel/UCGkMqnKUlRD1OlulfCjPzwQ" rel="noopener noreferrer" target="_blank" title="새창" style="text-decoration-line:none">
                                         <div><p class="txt01">AI소프트TV</p></div>
@@ -46,8 +49,8 @@
                                     </a>
                                 </li>
                             </ul>
-                        <%-- </div>
-                    </div> --%>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

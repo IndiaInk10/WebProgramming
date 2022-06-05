@@ -49,7 +49,7 @@ function check() {
  
  
  try {
-  sql = "select * from freeboard where id=? ";
+  sql = "select * from "+ table + " where id=? ";
   st = con.prepareStatement(sql);
   st.setInt(1, id);
   rs = st.executeQuery();

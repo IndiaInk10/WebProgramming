@@ -55,10 +55,10 @@
 							</a>
 							<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
 								<li><a class="dropdown-item" target="_blank" href="https://www.kangwon.ac.kr/www/selectBbsNttList.do?bbsNo=37&key=1176&)">학사공지</a></li>
-								<li><a class="dropdown-item" href="#">교육과정</a></li>
-								<li><a class="dropdown-item" href="#">편성교과목</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/bachelor/curriculum.jsp">교육과정</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/bachelor/subject.jsp">편성교과목</a></li>
 								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/bachelor/info.jsp">학사정보</a></li>
-								<li><a class="dropdown-item" href="#">학사일정</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/bachelor/calendar.jsp">학사일정</a></li>
 							</ul>
 						</li>
 					</ul>
