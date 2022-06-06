@@ -44,7 +44,7 @@
                                         <div><p class="txt01">장학안내</p></div>
                                     </a>
                                 </li>
-                                <li><a href="/aisw/bachelor/calendar.do" rel="noopener noreferrer" target="_blank" title="학사일정 바로가기" style="text-decoration-line:none">
+                                <li><a href="${pageContext.request.contextPath}/bachelor/calendar.jsp" rel="noopener noreferrer" title="학사일정 바로가기" style="text-decoration-line:none">
                                         <div><p class="txt01">학사일정</p></div>
                                     </a>
                                 </li>

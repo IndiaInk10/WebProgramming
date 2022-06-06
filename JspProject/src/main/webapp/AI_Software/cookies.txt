@@ -1,8 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-aisw.kangwon.ac.kr	TRUE	/aisw/	FALSE	1999999999	aisw-month	Y
-aisw.kangwon.ac.kr	TRUE	/aisw/	FALSE	1999999999	aisw-day	Y
-aisw.kangwon.ac.kr	TRUE	/aisw/	FALSE	1999999999	aisw-30min	Y
-aisw.kangwon.ac.kr	TRUE	/	FALSE	1999999999	JSESSIONID	3F6640BCD60F618856245127396E731A
-aisw.kangwon.ac.kr	TRUE	/	FALSE	1999999999	locale	ko
-

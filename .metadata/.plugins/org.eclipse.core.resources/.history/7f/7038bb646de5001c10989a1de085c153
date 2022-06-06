@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<%@ include file="../link.txt" %>
+<title>교수 | AI소프트웨어학과</title>
+<style>
+.form-select {
+	background-image:#fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right .75rem center/8px 10px no-repeat;
+}
+</style>
+</head>
+<body>
+<%@ include file="../menu.jsp" %>
+<div class="container px-0">
+	<h3 class="fw-bold mb-4">교수</h3>
+	<form class="form-inline bg-light" method="post" name="msgsearch" action="#">
+		<div class="container_div py-2 me-3">
+			<div class="row form-group">
+				<select class="col form-select offset-md-7" name="stype" style="background:#fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right .75rem center/8px 10px no-repeat;">
+					<option selected>이름</option>
+					<option value="1">제목</option>
+					<option value="2">내용</option>
+					<option value="3">이름+제목</option>
+					<option value="4">이름+내용</option>
+					<option value="5">제목+내용</option>
+					<option value="6">이름+제목+내용</option>
+				</select>
+				 &nbsp; 
+				 <input class="col form-control" type=text name="sval" placeholder="검색어를 입력해 주세요"> 
+				 &nbsp; 
+				 <a class="col-auto p-0 me-3" href="#" onclick="check();">
+				 	<button type="button" class="btn btn-outline-success">검색</button>
+				 </a>
+			</div>
+		</div>
+	</form>
+</div>
+<%@ include file="../footer.jsp" %>
+</body>
+</html>

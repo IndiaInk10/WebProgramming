@@ -12,7 +12,7 @@
 	
 	String sql = "select id, inputdate, subject, content from ";
 	String table = "";
-	String order = " order by inputdate";
+	String order = " order by inputdate desc";
 	String id = "";
 	String inputdate = "";
 	String subject = "";

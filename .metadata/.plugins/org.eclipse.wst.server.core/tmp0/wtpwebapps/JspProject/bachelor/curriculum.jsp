@@ -5,7 +5,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="/JspProject/project/_res/knu/aisw/css/top-of-curriculum.content350a.css" />
 <%@ include file="../link.txt" %>
-<title>학생회소개 | AI소프트웨어학과</title>
+<title>교육과정 | AI소프트웨어학과</title>
 </head>
 <body>
 <%@ include file="../menu.jsp" %>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <%@ include file="../link.txt" %>
-<title>학생회소개 | AI소프트웨어학과</title>
+<title>편성교과목 | AI소프트웨어학과</title>
 </head>
 <body>
 <%@ include file="../menu.jsp" %>

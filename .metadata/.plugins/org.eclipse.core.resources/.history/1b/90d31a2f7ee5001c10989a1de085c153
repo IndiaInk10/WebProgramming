@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<%@ include file="../link.txt" %>
+<title>더보기 | AI소프트웨어학과</title>
+</head>
+<body>
+<%@ include file="../menu.jsp" %>
+<div class="container px-0 mb-5">
+	<h3 class="fw-bold mb-4">교수</h3>
+	<table class="table">
+		<tbody>
+			<tr>
+				<td class="text-end">
+					<a class="btn btn-outline-success" href="${pageContext.request.contextPath}/professor/professor.jsp">목록</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="row">
+					<img class="col-auto" width="189px" height="248px" alt="황득영" src="https://aisw.kangwon.ac.kr/app/common/attach/image/thumb_272_1632460249000.do" onerror="this.src='${pageContext.request.contextPath}/project/_res/knu/_share/img/board/img-faculty-default.gif'"/>
+					<ul class="col ms-4">
+						<li class="mb-3">
+						<span>성명 </span>
+						<div>황득영 교수</div>
+						</li>
+						<li class="mb-3">
+						<span>연구분야 </span>
+						<div>병렬컴파일러/프로그래밍언어론</div>
+						</li>
+						<li class="mb-3">
+						<span>연구실 </span>
+						<div>5공학관 514호</div>
+						</li>
+						<li class="mb-3">
+						<span>연락처 </span>
+						<div><a class="text-decoration-none" href="tel:033-570-6376" title="전화걸기"></div>
+						033-570-6376 </a>
+						</li>
+						<li class="mb-3">
+						<span>이메일 : </span>
+						<div><a class="text-decoration-none" href="mailto:dyhwang@kangwon.ac.kr" title="메일보내기">dyhwang@kangwon.ac.kr</a></div>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td class="row">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<%@ include file="../footer.jsp" %>
+</body>
+</html>

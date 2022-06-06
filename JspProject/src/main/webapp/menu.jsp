@@ -43,8 +43,8 @@
 								교수소개
 							</a>
 							<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-								<li><a class="dropdown-item" href="#">교수</a></li>
-								<li><a class="dropdown-item" href="#">명예교수</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/professor/professor.jsp">교수</a></li>
+								<li><a class="dropdown-item" href="${pageContext.request.contextPath}/professor/emeritus-professor.jsp">명예교수</a></li>
 							</ul>
 						</li>
 					</ul>

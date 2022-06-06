@@ -1,0 +1,73 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<%@ include file="../link.txt" %>
+<title>교수 | AI소프트웨어학과</title>
+<style>
+.form-select {
+	background:#fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") right .75rem center/8px 10px no-repeat;
+}
+</style>
+</head>
+<body>
+<%@ include file="../menu.jsp" %>
+<div class="container px-0 mb-5">
+	<h3 class="fw-bold mb-4">교수</h3>
+	<form class="form-inline bg-light" method="post" name="msgsearch" action="#">
+		<div class="container_div py-2 me-3">
+			<div class="row form-group justify-content-end">
+				<select class="col form-select offset-md-7" name="stype" style="max-width:80px;">
+					<option selected>이름</option>
+					<option value="1">제목</option>
+					<option value="2">내용</option>
+					<option value="3">이름+제목</option>
+					<option value="4">이름+내용</option>
+					<option value="5">제목+내용</option>
+					<option value="6">이름+제목+내용</option>
+				</select>
+				 &nbsp; 
+				 <input class="col form-control" type=text name="sval" placeholder="검색어를 입력해 주세요" style="max-width:250px;"> 
+				 &nbsp; 
+				 <a class="col-auto p-0 me-3" href="#" onclick="check();">
+				 	<button type="button" class="btn btn-outline-success">검색</button>
+				 </a>
+			</div>
+		</div>
+	</form>
+	<div class="row">
+		<div class="col-6">
+			<div class="row rows-cols-1">
+				<div class="col-12 text-center mb-3">
+					<img alt="이태민" src="https://aisw.kangwon.ac.kr/app/common/attach/image/thumb_664_1646725165000.do" onerror="this.src='${pageContext.request.contextPath}/project/_res/knu/_share/img/board/img-faculty-default.gif'"/>
+					<div><span class="text-primary">이태민</span> 교수</div>
+				</div>
+				<div class="col-12 text-start">
+					<ul style="list-style:none;">
+						<li>
+						<span>연구분야 </span><span>컴퓨터그래픽스,감성컴퓨팅,증강/가상현실,인공지능</span>
+						</li>
+						<li>
+						<span>연구실 </span><span>5공학관 416호</span>
+						</li>
+						<li>
+						<span>연락처 </span>
+						<a href="tel:033-570-6378" title="전화걸기">
+						033-570-6378 </a>
+						</li>
+						<li>
+						<span>이메일 : </span>
+						<a href="mailto:kevinlee@kangwon.ac.kr" title="메일보내기">kevinlee@kangwon.ac.kr</a>
+						</li>
+						<li>
+						<a class="" href="#" title="더보기">더보기</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<%@ include file="../footer.jsp" %>
+</body>
+</html>
